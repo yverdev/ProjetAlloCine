@@ -1,0 +1,170 @@
+.hellocine-content{
+
+    // .aside-gauche{
+    //     background-image: url(../img/aside/trolls2.jpg);
+    //     background-size: cover;
+    //     background-position: center;
+    //     padding: 0;
+        
+    // }
+
+    // .aside-droit{
+    //     background-image: url(../img/aside/mulan2020.jpg);
+    //     background-size: cover;
+    //     background-position: center;
+    //     padding: 0;
+    // }
+
+    .box-event {
+        background: radial-gradient(ellipse at center, rgba(221,241,249,1) 0%,rgba(254,255,255,1) 64%,rgba(211,229,237,1) 100%);padding-bottom: 3vw;
+    }
+
+    h1, h2, h3{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bolder;
+        word-spacing: 1vw;
+        letter-spacing: 1px;
+    }
+
+    h1, h2{
+        
+        margin: 3vw;
+        color: #fecc00;
+        font-size: 3rem;
+        text-shadow: 0px 5px 4px rgba(34,34,34,0.63);
+    }
+
+    .carousel-actu{
+        border: 2px solid #222222;
+        
+        img{
+            max-height: 400px;
+        }
+        
+    }
+
+    .carousel-caption{
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .films-affiche{
+        
+        .films-affiche-box{
+            padding-top: 3vw;
+            padding-bottom: 3vw;
+            max-width: 80%;
+            .btn-roll{
+                margin-bottom: 5px;
+                border: hidden;
+            }
+            
+            .film-content{
+                border: 3px solid #222222;
+                padding: 5px;
+                overflow: hidden;
+
+                .relative{
+                    position: relative;
+                    &:hover{
+                        transform: scale(1.2);
+                        box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
+                    }
+                }
+
+                .icon-play{
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    left: 50%;
+                    color: #fecc00;
+                    font-size: 3rem;
+                }
+            
+                img{
+                    max-width: 200px;
+                    max-height: 250px;  
+                    margin-left: 2px;
+                    margin-right: 2px;                  
+                }
+
+            }
+                 
+        } 
+    }
+    
+    .coups-coeur{
+        
+        .coups-coeur-box{
+            .fas{
+                color: #fecc00;
+            }
+
+            .border-box1{
+
+                background: linear-gradient(135deg, rgba(254,204,0,0.7) 0%,rgba(246,203,14,0) 6%,rgba(125,185,232,0) 100%);
+                border-radius: 5px;
+                padding-top: 2px;
+
+                .box1{
+                    
+                    margin-left: 2px;
+                    padding-top: 25px;
+                    padding-bottom: 3vw;
+                    background-color: #fff;
+                    border-radius: 5px;
+                    
+                    blockquote{
+                        max-width: 70%;
+                        font-style: italic;
+                    }
+                }    
+            }
+           
+            
+            .border-box2{
+                background: linear-gradient(135deg, rgba(229,229,229,0) 8%,rgba(252,206,15,0) 94%,rgba(254,204,0,0.7) 100%);
+                border-radius: 5px;
+                padding-bottom: 2px;
+                padding-right: 2px;
+
+                .box2{
+                    padding-top: 3vw;
+                    margin-right: 2px;
+                    padding-bottom: 25px;
+                    background-color: #fff;
+                    border-radius: 5px;
+
+                    blockquote{
+                        max-width: 70%;
+                        font-style: italic;
+                        
+                    }
+                }
+            }
+            
+
+            
+
+            h3{
+                padding-bottom: 1vw;
+            }
+            img{
+                width: 100%;
+                max-width: 200px;
+                max-height: 300px;
+                
+                
+                &:hover{
+                    transform: scale(1.2);
+                    box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
+                }
+
+        }
+        }
+    }
+
+    .modal-content{
+        width: 560px;
+    }
+   
+}

@@ -1,0 +1,107 @@
+/***************************************************** 
+                     COMMUN
+*****************************************************/
+@import "_normalize.scss";
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+.marquee-rtl {
+
+    margin: 1em auto 2em;
+    border-radius: 5px;
+    overflow: hidden;                    
+
+    .info {
+        font-size: 2rem;
+        display: inline-block;               
+        padding-right: 2em;                  
+        padding-left: 100%; 
+        white-space: nowrap;                  
+        animation: defilement-rtl 15s infinite linear;
+        
+        @keyframes defilement-rtl {
+            0% {
+              transform: translate3d(0,0,0);     
+            }
+            100% {
+              transform: translate3d(-280%,0,0);  
+            }
+        }
+
+        .evt{
+            font-weight: bolder;
+            color: #fecc00;
+        }
+    }
+}
+
+
+
+/************************* HEADER ****************************/
+header{
+    
+    background: linear-gradient(to bottom, rgba(34,34,34,1) 0%,rgba(76,76,76,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 75%,rgba(76,76,76,1) 98%,rgba(76,76,76,1) 98%,rgba(19,19,19,1) 100%);
+    background-size: 100%;
+    color: #fff;
+   
+    .logo-header{
+        width: 100%;
+        max-width: 3vw;
+    }
+
+    nav{
+        
+        a{
+            color: #fff;
+            &:hover{
+                text-decoration: none;  
+                color: #fecc00;
+                font-weight: bolder;
+            }
+        }
+    }
+}    
+/************************* MAIN ****************************/   
+main{
+    @import "_index.scss";
+    @import "_fiche-films.scss";
+}
+/************************* FOOTER ****************************/
+footer{
+    background-color: #222222;
+    min-height: 5vw;
+
+    a{
+        color: #fecc00;
+    }
+    .nav-foot-1 {
+        padding: 1rem;
+        a{
+            font-size: 2rem;
+            padding: 1rem;
+            margin: 2rem;
+            &:hover{
+                color: red;
+                transform: scale(2);
+            }
+        }
+        .fa-deco{
+            
+            &:hover{
+                
+                transform: rotate(-15deg);
+                color: red;
+            }
+        }
+        
+    }
+    
+    .nav-foot-2 a {
+        text-decoration: none;
+    }
+}
