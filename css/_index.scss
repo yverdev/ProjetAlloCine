@@ -1,20 +1,5 @@
 .hellocine-content{
 
-    // .aside-gauche{
-    //     background-image: url(../img/aside/trolls2.jpg);
-    //     background-size: cover;
-    //     background-position: center;
-    //     padding: 0;
-        
-    // }
-
-    // .aside-droit{
-    //     background-image: url(../img/aside/mulan2020.jpg);
-    //     background-size: cover;
-    //     background-position: center;
-    //     padding: 0;
-    // }
-
     .box-event {
         background: radial-gradient(ellipse at center, rgba(221,241,249,1) 0%,rgba(254,255,255,1) 64%,rgba(211,229,237,1) 100%);padding-bottom: 3vw;
     }
@@ -47,51 +32,105 @@
         background-color: rgba(0,0,0,0.5);
     }
 
-    .films-affiche{
-        
-        .films-affiche-box{
-            padding-top: 3vw;
-            padding-bottom: 3vw;
-            max-width: 80%;
-            .btn-roll{
-                margin-bottom: 5px;
-                border: hidden;
-            }
-            
-            .film-content{
-                border: 3px solid #222222;
-                padding: 5px;
-                overflow: hidden;
-
-                .relative{
-                    position: relative;
-                    &:hover{
-                        transform: scale(1.2);
-                        box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
-                    }
-                }
-
-                .icon-play{
-                    position: absolute;
-                    transform: translate(-50%, -50%);
-                    top: 50%;
-                    left: 50%;
-                    color: #fecc00;
-                    font-size: 3rem;
-                }
-            
-                img{
-                    max-width: 200px;
-                    max-height: 250px;  
-                    margin-left: 2px;
-                    margin-right: 2px;                  
-                }
-
-            }
-                 
-        } 
-    }
+    /* Essaie animation sur affiche film */   
+    //https://www.youtube.com/watch?v=M7Dae-7nfow
     
+    /*  .films-affiche-box{
+        position: relative;
+        width: 1000px;
+        transform-style: preserve-3d;
+
+        .box-affiche{
+            position: relative;
+            width: 300px;
+            height: 400px;
+            margin: 20px 0;
+            perspective: 1000px;
+            overflow: hidden;
+            transform-style: preserve-3d;
+
+            .img-box-affiche{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-origin: top;
+                transform-style: preserve-3d;
+                transition: 0.5s;
+
+                &:hover{
+                    transform: rotateX(-90deg);
+                    opacity: 0;
+                    transition-delay: 0.2s;
+                }
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+            .content-box-affiche{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #333;
+                padding: 40px;
+                transform-origin: bottom;
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                transform: rotateX(90deg);
+                opacity: 0;
+                color: #fecc00;
+
+                &:hover{
+                    transform: rotateX(0deg);
+                    opacity: 1;
+                    transition-delay: 0.2s;
+                }
+            }
+        }
+    }  */
+
+//ESSAIE
+    .film-box-essaie{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        overflow: hidden;
+        background-image: url(../img/films/James-bond.jpg);
+        
+        background-size: cover;
+        padding: 0;
+
+        
+
+        .box-hidden{
+            top: 100%;
+            position: relative;
+            transition: all .8s ease-in-out;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            color: #fff;
+            
+            h2{
+                margin: 0;
+                
+            }
+        }
+
+        &:hover > .box-hidden{
+            top: 0;
+        }
+    }
+        
     .coups-coeur{
         
         .coups-coeur-box{
@@ -106,18 +145,23 @@
                 padding-top: 2px;
 
                 .box1{
-                    
+                    margin-right: 2px;
                     margin-left: 2px;
                     padding-top: 25px;
                     padding-bottom: 3vw;
                     background-color: #fff;
                     border-radius: 5px;
+
+                    img{
+                        border-radius: 5px;
+                    }
                     
                     blockquote{
                         max-width: 70%;
                         font-style: italic;
                     }
-                }    
+                } 
+                
             }
            
             
@@ -125,14 +169,19 @@
                 background: linear-gradient(135deg, rgba(229,229,229,0) 8%,rgba(252,206,15,0) 94%,rgba(254,204,0,0.7) 100%);
                 border-radius: 5px;
                 padding-bottom: 2px;
-                padding-right: 2px;
+                /* padding-right: 2px; */
 
                 .box2{
+                    margin-left: 2px;
                     padding-top: 3vw;
                     margin-right: 2px;
                     padding-bottom: 25px;
                     background-color: #fff;
                     border-radius: 5px;
+
+                    img{
+                        border-radius: 5px;
+                    }
 
                     blockquote{
                         max-width: 70%;
