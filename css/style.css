@@ -433,20 +433,6 @@ main {
 } */
 }
 
-main .hellocine-content .aside-gauche {
-  background-image: url(../img/aside/trolls2.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 0;
-}
-
-main .hellocine-content .aside-droit {
-  background-image: url(../img/aside/mulan2020.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 0;
-}
-
 main .hellocine-content .box-event {
   background: radial-gradient(ellipse at center, #ddf1f9 0%, #feffff 64%, #d3e5ed 100%);
   padding-bottom: 3vw;
@@ -534,6 +520,7 @@ main .hellocine-content .coups-coeur .coups-coeur-box .border-box1 {
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .border-box1 .box1 {
+  margin-right: 2px;
   margin-left: 2px;
   padding-top: 25px;
   padding-bottom: 3vw;
@@ -554,6 +541,7 @@ main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 {
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 .box2 {
+  margin-left: 2px;
   padding-top: 3vw;
   margin-right: 2px;
   padding-bottom: 25px;
