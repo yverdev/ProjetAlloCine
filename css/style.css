@@ -416,22 +416,6 @@ header nav a:hover {
 }
 
 /************************* MAIN ****************************/
-main {
-  /* .carousel-inner{
-    
-    .carousel-item{
-        background-color: red;
-        justify-content: space-between;
-        
-        .testImg{
-            width: 100%;
-            max-width: 300px;
-            max-height: 400px;
-            /* display: none; 
-        }
-    }
-} */
-}
 
 main .hellocine-content .box-event {
   background: radial-gradient(ellipse at center, #ddf1f9 0%, #feffff 64%, #d3e5ed 100%);
