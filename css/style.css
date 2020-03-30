@@ -426,92 +426,41 @@ header .nav-head a:hover {
 
 /************************* MAIN ****************************/
 main {
-  /* .carousel-inner{
-    
-    .carousel-item{
-        background-color: red;
-        justify-content: space-between;
-        
-        .testImg{
-            width: 100%;
-            max-width: 300px;
-            max-height: 400px;
-            /* display: none; 
-        }
-    }
-} */
+  /* FORMULAIRE */
 }
 
 main .hellocine-content {
-  /* Essaie animation sur affiche film */
-  /*  .films-affiche-box{
-        position: relative;
-        width: 1000px;
-        transform-style: preserve-3d;
-
-        .box-affiche{
+  padding: 0;
+  /*  .film-box-essaie{
             position: relative;
             width: 300px;
             height: 400px;
-            margin: 20px 0;
-            perspective: 1000px;
             overflow: hidden;
-            transform-style: preserve-3d;
+            background-image: url(../img/films/James-bond.jpg);
+            
+            background-size: cover;
+            padding: 0;
 
-            .img-box-affiche{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
+            
+
+            .box-hidden{
+                top: 100%;
+                position: relative;
+                transition: all .8s ease-in-out;
                 height: 100%;
-                transform-origin: top;
-                transform-style: preserve-3d;
-                transition: 0.5s;
-
-                &:hover{
-                    transform: rotateX(-90deg);
-                    opacity: 0;
-                    transition-delay: 0.2s;
-                }
-
-                img{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-
-            }
-            .content-box-affiche{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: #333;
-                padding: 40px;
-                transform-origin: bottom;
-                transform-style: preserve-3d;
-                transition: 0.5s;
-                transform: rotateX(90deg);
-                opacity: 0;
-                color: #fecc00;
-
-                &:hover{
-                    transform: rotateX(0deg);
-                    opacity: 1;
-                    transition-delay: 0.2s;
+                background-color: rgba(0,0,0,0.8);
+                color: #fff;
+                
+                h2{
+                    margin: 0;
+                    
                 }
             }
-        }
-    }  */
-}
 
-main .hellocine-content .box-event {
-  background: radial-gradient(ellipse at center, #ddf1f9 0%, #feffff 64%, #d3e5ed 100%);
-  padding-bottom: 3vw;
+            &:hover > .box-hidden{
+                top: 0;
+            }
+        } */
 }
 
 main .hellocine-content h1, main .hellocine-content h2, main .hellocine-content h3 {
@@ -522,50 +471,40 @@ main .hellocine-content h1, main .hellocine-content h2, main .hellocine-content 
 }
 
 main .hellocine-content h1, main .hellocine-content h2 {
-  margin: 3vw;
+  /* margin: 3vw; */
   color: #fecc00;
   font-size: 3rem;
   text-shadow: 0px 5px 4px rgba(34, 34, 34, 0.63);
 }
 
-main .hellocine-content .carousel-actu {
+main .hellocine-content .box-office {
+  background-color: #222222;
+  padding-bottom: 5rem;
+}
+
+main .hellocine-content .box-office h2 {
+  padding: 2rem;
+}
+
+main .hellocine-content .box-office .carousel-actu {
   border: 2px solid #222222;
 }
 
-main .hellocine-content .carousel-actu img {
+main .hellocine-content .box-office .carousel-actu img {
   max-height: 400px;
 }
 
-main .hellocine-content .carousel-caption {
+main .hellocine-content .box-office .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-main .hellocine-content .film-box-essaie {
-  position: relative;
-  width: 300px;
-  height: 400px;
-  overflow: hidden;
-  background-image: url(../img/films/James-bond.jpg);
-  background-size: cover;
-  padding: 0;
+main .hellocine-content .coups-coeur {
+  background-color: #222222;
+  padding-bottom: 5rem;
 }
 
-main .hellocine-content .film-box-essaie .box-hidden {
-  top: 100%;
-  position: relative;
-  -webkit-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-}
-
-main .hellocine-content .film-box-essaie .box-hidden h2 {
-  margin: 0;
-}
-
-main .hellocine-content .film-box-essaie:hover > .box-hidden {
-  top: 0;
+main .hellocine-content .coups-coeur h2 {
+  padding: 2rem;
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .fas {
@@ -600,7 +539,6 @@ main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 {
   background: linear-gradient(135deg, rgba(229, 229, 229, 0) 8%, rgba(252, 206, 15, 0) 94%, rgba(254, 204, 0, 0.7) 100%);
   border-radius: 5px;
   padding-bottom: 2px;
-  /* padding-right: 2px; */
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 .box2 {
@@ -642,6 +580,10 @@ main .hellocine-content .modal-content {
   width: 560px;
 }
 
+main .films-venir h2 {
+  padding: 2rem;
+}
+
 main .movie-bgc {
   background-image: url("../img/fiche-films/bg-jamesBond.jpg");
   background-size: cover;
@@ -662,7 +604,6 @@ main .main-top {
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: #ffffff;
-  /********************* TEST *******************/
 }
 
 main .main-top h1, main .main-top h2 {
@@ -682,11 +623,11 @@ main .main-top .modal-content button {
 
 main .main-top .movie-img {
   /* background-image: url("../img/films/James-bond.jpg");
-        background-size: cover; */
+      background-size: cover; */
   /* width: 100%;
-        max-width: 300px;
-        max-height: 450px;
-        border-radius: 5px; */
+      max-width: 300px;
+      max-height: 450px;
+      border-radius: 5px; */
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -705,7 +646,7 @@ main .main-top .movie-img .far {
 main .main-top .movie-img img {
   width: 100%;
   /* max-width: 300px;
-        max-height: 450px; */
+      max-height: 450px; */
   border-radius: 5px;
 }
 
@@ -724,7 +665,7 @@ main .main-top .movie-info h4 {
   font-size: 1.5rem;
 }
 
-main .film-content {
+main .main-top .film-content {
   max-width: 600px;
   border: 3px solid #222222;
   padding: 5px;
@@ -755,23 +696,23 @@ main .film-content {
   }
 }
 
-main .film-content .slideInLeft {
+main .main-top .film-content .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
 
-main .film-content .relative {
+main .main-top .film-content .relative {
   position: relative;
 }
 
-main .film-content .relative:hover {
+main .main-top .film-content .relative:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
-main .film-content .icon-play {
+main .main-top .film-content .icon-play {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -781,7 +722,7 @@ main .film-content .icon-play {
   font-size: 3rem;
 }
 
-main .film-content img {
+main .main-top .film-content img {
   max-width: 200px;
   max-height: 250px;
   margin-left: 2px;
@@ -800,7 +741,7 @@ main .film-content img {
   }
 }
 
-main .slideInLeft {
+main .main-top .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
 }
@@ -829,9 +770,116 @@ main .slideInLeft {
   }
 }
 
-main .slideInRight {
+main .main-top .slideInRight {
   -webkit-animation-name: slideInRight;
   animation-name: slideInRight;
+}
+
+main h1 {
+  margin: 3vw;
+  color: #fecc00;
+  font-size: 3rem;
+  text-shadow: 0px 5px 4px rgba(34, 34, 34, 0.63);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  word-spacing: 1vw;
+  letter-spacing: 1px;
+}
+
+main form {
+  border: 2px solid #fecc00;
+  border-radius: 5px;
+  margin: 25px auto 0;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+main form fieldset {
+  margin-bottom: 20px;
+  border: 2px solid #c0c0c0;
+}
+
+main form .form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main form legend {
+  font-size: 1.4rem;
+  padding: 0 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bolder;
+  word-spacing: 1vw;
+  letter-spacing: 1px;
+}
+
+main form label {
+  font-weight: bold;
+}
+
+main form select,
+main form form input[type="text"],
+main form form input[type="email"] {
+  /*tous les input de type="email*/
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  outline: 0;
+  padding: 10px;
+}
+
+main form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+main form .validation {
+  text-align: center;
+}
+
+main div .btn {
+  background-color: #252525;
+  border: 0;
+  border-radius: 5px;
+  color: #fecc00;
+  display: inline-block;
+  margin: 10px 0 15px;
+  padding: 10px 15px;
+}
+
+main div .btn div .btn:hover {
+  background-color: #0056b3;
+  color: #ffb129;
+}
+
+main p.error {
+  color: red;
+  display: none;
+}
+
+main div#control {
+  padding: 10px;
+  font-size: 1.2em;
+  display: none;
+}
+
+main .success {
+  background: green;
+  color: #fff;
+}
+
+main .danger {
+  background: red;
+  color: #fff;
 }
 
 /************************* FOOTER ****************************/
