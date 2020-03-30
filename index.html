@@ -19,9 +19,7 @@
 
         <div class="container">
 
-            
-
-            <div class="row justify-content-between align-items-center">
+            <div class="row justify-content-between align-items-center box-header-un">
 
                 <div class="col-lg-4">
                     <a href="index.html"><img class="logo-header" src="img/logo-trans.png" alt="logo de Hellocine"></a>
@@ -36,9 +34,9 @@
 
             </div>
 
-            <div class="nav-head">
+            <div class="">
 
-                <nav class="row justify-content-between">
+                <nav class="row justify-content-between nav-head">
 
                     <div><a href="#films-affiche">À l'affiche</a></div>
                     <div><a href="#coeur">Coups de coeur</a></div>
@@ -62,11 +60,9 @@
 
             <div class="row justify-content-around flex-nowrap hellocine-content">
                 
-                <aside class="col d-none d-xl-block aside-gauche">
-                 <!-- Pour le Background de Gauche -->
-                </aside>
+                
     
-                <div class="col-12 col-xl-8 box-event">
+                <!-- <div class="col-12 col-xl-8 box-event"> -->
 
                     <div class="container ">
 
@@ -78,7 +74,7 @@
                         </div>
         
         
-                        <h2 class="text-center">Actualités</h2>
+                        <h2 class="text-center">Box Office</h2>
         
                         <!-- Carousel Actu -->
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -139,140 +135,59 @@
                         </div>
         
                         <!-- Films à l'affiche -->
-                        <section class="text-center films-affiche " id="films-affiche">
+                        <section class="row text-center films-affiche ">
         
-                            <h1>Films à l'affiche</h1>
+                            <h1 class="col-12">Films à l'affiche</h1>
+
+                            <!-- /* Essaie animation sur affiche film */ -->   
+                            <!-- https://www.youtube.com/watch?v=M7Dae-7nfow -->
                                 
-                            <div class="container  films-affiche-box">
+                            <!-- <div class="container justify-content-around  films-affiche-box">
                                 
-                                <div id="slider" class="text-right btn-roll">
-                                    <button id="precedent" onclick="ChangeSlide(-1)" ><i class="fas fa-chevron-left"></i></button>
-                                    <button id="suivant" onclick="ChangeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+                                <div class="box-affiche">
+
+                                    <div class="img-box-affiche">
+                                        <img src="img/films/James-bond.jpg" alt="">
+                                    </div>
+
+                                    <div class="content-box-affiche justify-content-center align-items-center">
+                                        <div>
+                                            <h2>James-bond</h2>
+                                            <p>Mourir peut attendre</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia ullam saepe quam necessitatibus ipsam cupiditate beatae.</p>
+                                            <button>+ d'info</button>
+                                            <button>Bande annonce</button>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                
-                                <div class="row flex-nowrap film-content">
+                            </div> -->
 
-                                    <div class="relative">
+                            <div class="container film-box-essaie">
 
-                                        <div data-toggle="modal" data-target="#james" >
-                                            <img src="img/films/James-Bond.jpg" alt="">
-                                        </div>
+                                <div class="row">
 
-                                        <div class="icon-play">
-                                            <i class="far fa-play-circle"></i>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="modal fade" id="james" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
-    
-                                        <div class="modal-dialog modal-dialog-centered" role="document">
-    
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-    
-                                                    <h5 class="modal-title" id="Title">James Bond 2020</h5>
-                                                    
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                    </button>
-    
-                                                </div>
-                                                <div class="">
-    
-                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BIhNsAtPbPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    
-                                                    <div class="row justify-content-around align-items-center">
-    
-                                                        <div>
-                                                            <h3>Résumé</h3>
-                                                        </div>
-                                                        <div>
-                                                            <p>Durée	2H43</p>
-                                                        </div>
-    
-                                                    </div>
-    
-                                                    <p class="text-left">James Bond a quitté les services secrets et coule des jours heureux en Jamaïque. Mais sa tranquillité est de courte durée car son vieil ami Felix Leiter de la CIA débarque pour solliciter son aide : il s'agit de sauver un scientifique qui vient d'être kidnappé. Mais la mission se révèle bien plus dangereuse que prévu et Bond se retrouve aux trousses d'un mystérieux ennemi détenant de redoutables armes technologiques...</p>
-    
-                                                </div>
-                                            
-                                            </div>
-                                                
-                                        </div>
-    
-                                    </div>
-        
-                                    <div class="img1" >
-                                        <img src="img/films/10-JOURS-SANS-MAMAN.jpg" alt="">
-                                        <!--  <div class="icon-play">
-                                            <i class="far fa-play-circle"></i>
-                                        </div> -->
-                                    </div>
-        
-                                    <div>
-                                        <img src="img/films/trolls2.jpg" alt="">
-                                    </div>
-        
-                                    <div>
-                                        <img src="img/films/BLOODSHOT (2020).jpg" alt="">
-                                    </div>
-        
-                                    <div>
-                                        <!-- Button trigger modal -->
-                                        <div data-toggle="modal" data-target="#bad-boys">
-                                            <img src="img/films/BAD-BOYS.jpg" alt="">
-                                        </div>
-                
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="bad-boys" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
-        
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
-        
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-        
-                                                        <h5 class="modal-title" id="Title">Bad Boys 3</h5>
-                                                        
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                        </button>
-        
-                                                    </div>
-                                                    <div class="">
-        
-                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jKCj3XuPG8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                        
-                                                        <div class="row justify-content-around align-items-center">
-        
-                                                            <div>
-                                                                <h3>Résumé</h3>
-                                                            </div>
-                                                            <div>
-                                                                <p>Durée	2H03</p>
-                                                            </div>
-        
-                                                        </div>
-        
-                                                        <p class="text-left">Les Bad Boys Mike Lowrey et Marcus Burnett se retrouvent pour résoudre une ultime affaire...</p>
-        
-                                                    </div>
-                                                
-                                                </div>
-                                                    
-                                            </div>
-        
-                                        </div>
-            
-                                    </div>
-
-                                    <div>
-                                        <img src="img/films/en-avant.jpg" alt="">
-                                    </div>
-                                
+                                </div>
+                                <!-- <div class="img-test">
+                                    <img src="img/films/trolls2.jpg" alt="">
+                                    
+                                </div> -->
+                                <div class="box-hidden">
+                                    <h2>James-bond</h2>
+                                    <p>Mourir peut attendre</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia ullam saepe quam necessitatibus ipsam cupiditate beatae.</p>
+                                    <button>+ d'info</button>
+                                    <button>Bande annonce</button>
+                                    
                                 </div>
                                 
                             </div>
+                            
+                            <div class="row list">
+
+                            </div>
+
         
                         </section>
         
@@ -317,7 +232,7 @@
                                             
                                         </div>
             
-                                        <div class="col-md-4 col-lg-3">
+                                        <div class="col-md-4 col-lg-3 text-right">
                                             <img src="img/films/BIRDS-OF-PREY.jpg" alt="">
                                         </div>
             
@@ -376,11 +291,9 @@
         
                     </div>
 
-                </div>
+                <!-- </div> -->
                 
-                <aside class="col d-none d-xl-block aside-droit">
-                    <!-- Pour le background de droite -->
-                </aside>
+                
                 
             </div>
 
@@ -418,11 +331,12 @@
             </div>
 
         </div>
-
+        <div><p>test</p></div>
     </footer>
-
+    <!-- Charger la donnée movies -->
+    <script src="js/movie-data.js"></script>
     <!-- jquery pour Bootstarp 4 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Mon script -->
