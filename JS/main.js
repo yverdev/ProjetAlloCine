@@ -1,89 +1,61 @@
-/* var slider = new Array("James-Bond.jpg", "10-JOURS-SANS-MAMAN.jpg", "trolls2.jpg", "BLOODSHOT (2020).jpg", "BAD-BOYS.jpg", "en-avant.jpg");
-var numero = 0;
-var next = document.querySelector('#suivant');
-var sens = 0;
+/*
+	* AU CHARGEMENT DE LA PAGE ON AFFICHE LA LISTE DES FILMS DEPUIS Le ARRAY movies (dans js/data.js)
+*/
+// Selection de la liste des films
+var list = $('.list');
+console.log('list');
+// On cache la div.details au chargement de la page
+$('div.details').hide();
+// On affiche le nombre de films
+$('.supertitle span').text(movies.length)
 
-function ChangeSlide(sens) {
-    numero = numero + sens;
-    if (numero < 0)
-        numero = slider.length - 1;
-    if (numero > slider.length - 1)
-        numero = 0;
-    document.querySelector("#slider").src = slider[numero];
-    console.log('ChangeSlide');
-}
+// On génère les items des films dans la div.list
+for(var i=0; i < movies.length; i++) {
+	list.append(`
+			<div data-index="${i}" class="col-12 col-md-4 mb-5 item text-center py-2 px-4">
 
-next.addEventListener('onclick', ChangeSlide);
-console.log('next'); */
+				<div class="card">
+                    <img class="card-img-top" src="${movies[i].image}" alt="Card image cap">
 
-var slides =
-[
-    { image: 'img/films/James-Bond.jpg' },
-    { image: 'img/films/10-JOURS-SANS-MAMAN.jpg' },
-    { image: 'img/films/trolls2.jpg' },
-    { image: 'img/films/BLOODSHOT (2020).jpg' },
-    { image: 'img/films/BAD-BOYS.jpg' },
-    { image: 'img/films/en-avant.jpg' }
-];
+                    <div class="card-info">
+                    <h2>${movies[i].title}</h2>
+                    <p>${movies[i].date}</p>
+                    <p>${movies[i].genre}</p>
+                    <p>${movies[i].director}</p>
+                    <p>${movies[i].duration}</p>
 
-var index = 0;
-var idInterval = null;
-
-
-
-var nextBtn = document.querySelector('button#suivant');
-var prevBtn = document.querySelector('button#precedent');
-var imgFirstElt = document.querySelector('.firstImg');
-var imgSecondElt = document.querySelector('.secondImg');
-var imgThirdElt = document.querySelector('.thirdImg');
-
-console.log('imageElt')
-//console.log('')
-//console.log('')
-
-
-//console.log('nextImg');
-
-function nextImg(){
-    index = index+3;
-
-    if(index > slides.length + 1){
-        index = 0;
-    }
-    else if(index+1 > slides.length + 1){
-        index = 0;
-    }
-    else if(index+2 > slides.length + 1){
-        index = 0;
-    }
-    imgFirstElt.src = slides[index].image;
-    imgSecondElt.src = slides[index+1].image;
-    imgThirdElt.src = slides[index+2].image;
-
+                    </div> 
+                    
+                      
+                    
+                    </div>
+                   
+			</div>
+		`)
 }
 
 
-nextBtn.addEventListener('click', nextImg);
+/* $('div.card').hover(function(){
+    $(this).slideUp(800);
+    //$(this).slideDown(800);
+}); */
+$('div.card-info').hide();
+//var cardInfoHide = $('div.card-info').hide();
+//var cardInfoShow = $('div.card-info').show();
 
-function prevImg(){
-    index = index-3;
+$('div.card').hover(function(){
+    
 
-    if(index < 0){
-        index = slides.length-1;
+    if($('card-img-top').hover()){
+        var imgUp = $(this).slideUp(800);
+        /* $('div.card-info').show().slideDown(800); */
+        if(imgUp==slideUp()){
+            $('div.card')
+        }
+        
+        
+    };
+    /* if(imgUp==0)
     }
-    else if(index -1 < -1 ){
-        index = slides.length-2;
-
-    }
-    else if(index- 2 < -2){
-        index = slides.length-3;
-
-    }
-    imgFirstElt.src = slides[index].image;
-    imgSecondElt.src = slides[index+1].image;
-    imgThirdElt.src = slides[index+2].image;
-
-}
-
-
-prevBtn.addEventListener('click', prevImg);
+     */
+});
