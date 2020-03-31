@@ -5,9 +5,9 @@
 var list = $('.list');
 console.log('list');
 // On cache la div.details au chargement de la page
-$('div.details').hide();
+$('div.details').hide(); //where is the div.details?
 // On affiche le nombre de films
-$('.supertitle span').text(movies.length)
+$('.supertitle span').text(movies.length) //where the class?
 
 // On génère les items des films dans la div.list
 for(var i=0; i < movies.length; i++) {
