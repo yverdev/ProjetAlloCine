@@ -14,7 +14,7 @@ for (var i = 0; i < movies.length; i++) {
     list.append(`
 			<div class="col-12 col-md-4 mb-5 item text-center py-2 px-4">
 
-                <div data-id="${movies[i].id}" class="card">
+				<div data-id="${movies[i].id}" class="card">
                     <img class="card-img-top" src="${movies[i].image}" alt="Card image cap">
 
                     <div class="card-info">
@@ -42,15 +42,6 @@ function getDetail() {
 
 $('div.card').on('click', getDetail);
 
-var idFilm = $('.card')
-idFilm.mouseover(function(e){
-    $('.card-img-top').hide(2000, 'linear');
-    
-}).mouseout(function(e){
-    $('.card-img-top').show(2000, 'linear');
-    e.stopPropagation();
-    e.eventPresentDefault();
-})
 
 
 /* $('div.card').hover(function(){
@@ -64,9 +55,9 @@ idFilm.mouseover(function(e){
 //var cardInfoHide = $('div.card-info').hide();
 //var cardInfoShow = $('div.card-info').show();
 
-//$('div.card').hover(function () {
+$('div.card').hover(function () {
 
-    
+
     // if($('card-img-top').hover()){
     //     var imgUp = $(this).slideUp(800);
     //     /* $('div.card-info').show().slideDown(800); */
