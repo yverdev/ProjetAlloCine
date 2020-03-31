@@ -425,7 +425,6 @@ header .nav-head a:hover {
 }
 
 /************************* MAIN ****************************/
-
 main {
   /* FORMULAIRE */
 }
@@ -462,7 +461,6 @@ main .hellocine-content {
                 top: 0;
             }
         } */
-
 }
 
 main .hellocine-content h1, main .hellocine-content h2, main .hellocine-content h3 {
@@ -624,14 +622,12 @@ main .main-top .modal-content button {
 }
 
 main .main-top .movie-img {
-
   /* background-image: url("../img/films/James-bond.jpg");
       background-size: cover; */
   /* width: 100%;
       max-width: 300px;
       max-height: 450px;
       border-radius: 5px; */
-
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -649,10 +645,8 @@ main .main-top .movie-img .far {
 
 main .main-top .movie-img img {
   width: 100%;
-
   /* max-width: 300px;
       max-height: 450px; */
-
   border-radius: 5px;
 }
 
