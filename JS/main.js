@@ -59,3 +59,21 @@ $('div.card').hover(function(){
     }
      */
 });
+
+/* TEST Search Full Screen */
+var searchBtn = $('.fa-search');
+console.log('searchBtn');
+
+// Open the full screen search box
+function openSearch() {
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  
+  // Close the full screen search box
+  function closeSearch() {
+    document.getElementById("myOverlay").style.display = "none";
+  }
+
+searchBtn.on('click', openSearch);
+
+/* Fin TEST */
