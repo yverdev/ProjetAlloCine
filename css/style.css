@@ -466,12 +466,28 @@ body {
   color: #fecc00;
 }
 
+.marquee-rtl-tel {
+  margin: 0;
+  padding-top: 7vw;
+}
+
 /************************* HEADER ****************************/
+/* .header-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 0px;
+} */
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#222222), color-stop(0%, #4c4c4c), color-stop(0%, #222222), color-stop(75%, #222222), color-stop(98%, #4c4c4c), color-stop(98%, #4c4c4c), to(#131313));
   background: linear-gradient(to bottom, #222222 0%, #4c4c4c 0%, #222222 0%, #222222 75%, #4c4c4c 98%, #4c4c4c 98%, #131313 100%);
   background-size: 100%;
   color: #fff;
+  /* position: relative; */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
 }
 
 header .logo-header {
@@ -499,9 +515,9 @@ header .nav-head a:hover {
 }
 
 /************************* MAIN ****************************/
-
 main {
   /* FORMULAIRE */
+  margin-top: 7vw;
 }
 
 main .hellocine-content {
@@ -536,7 +552,6 @@ main .hellocine-content {
                 top: 0;
             }
         } */
-
 }
 
 main .hellocine-content h1, main .hellocine-content h2, main .hellocine-content h3 {
@@ -702,14 +717,12 @@ main .main-top .modal-content button {
 }
 
 main .main-top .movie-img {
-
   /* background-image: url("../img/films/James-bond.jpg");
       background-size: cover; */
   /* width: 100%;
       max-width: 300px;
       max-height: 450px;
       border-radius: 5px; */
-
   padding-left: 0;
   padding-right: 0;
   position: relative;
@@ -727,10 +740,8 @@ main .main-top .movie-img .far {
 
 main .main-top .movie-img img {
   width: 100%;
-
   /* max-width: 300px;
       max-height: 450px; */
-
   border-radius: 5px;
 }
 
