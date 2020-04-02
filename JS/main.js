@@ -52,6 +52,12 @@ idFilm.mouseover(function(e){
     e.eventPresentDefault();
 })
 
+
+/* $('div.card').hover(function(){
+    $(this).slideUp(800);
+    //$(this).slideDown(800);
+}); */
+
 // $('div.card-info').hide();
 
 
