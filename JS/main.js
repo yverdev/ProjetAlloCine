@@ -1,3 +1,8 @@
+
+
+
+
+
 /*
 	* AU CHARGEMENT DE LA PAGE ON AFFICHE LA LISTE DES FILMS DEPUIS Le ARRAY movies (dans js/data.js)
 */
@@ -55,7 +60,7 @@ $('div.card').on('click', getDetail);
 //var cardInfoHide = $('div.card-info').hide();
 //var cardInfoShow = $('div.card-info').show();
 
-$('div.card').hover(function () {
+// $('div.card').hover(function () {
 
 
     // if($('card-img-top').hover()){
