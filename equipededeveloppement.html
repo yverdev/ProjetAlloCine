@@ -15,6 +15,17 @@
 
 <body>         
     <header>
+
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+
         <div class="container">
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-4">
@@ -30,8 +41,9 @@
                 <nav class="row justify-content-between nav-head">
 
                     <div><a href="index.html">Accueil</a></div>
-                    <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
-                    <div><a href="#prochainement">Prochainement</a></div>
+
+                    <div><a href="index.html#coeur">Coups de coeur</a></div>
+                    <div><a href="index.html#prochainement">Prochainement</a></div>
                     <div><a href="fiche-films.html">Films</a></div>
                     <div><p><i class="fas fa-search"></i></p></div>
                     <div><a href="login.html"><i class="far fa-user"></i></a></div>
@@ -43,16 +55,22 @@
 
     
     <main>
-
         <div class="container-fluid hellocine-content">
+            <!-- Box Évenement TEL-->
+            <div class="container d-lg-none marquee-rtl marquee-rtl-tel">
+
+                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+                
+            </div>
             <div class="justify-content-around flex-nowrap " id="mainbackground">     
                 <div class="box-event">
                     
                     <!-- Development Group -->
                     <section class="text-center coups-coeur" id="coeur">
                         <h2>Le Groupe de travail</h2>
-    
-                        <div class="container coups-coeur-box">
+                        
+                        <div class="container group-box">
+                            
                             <article class="border-box1">
                                 <div class="row justify-content-between align-items-center text-left box1">
                                     <div class="col-md-4 col-lg-3">
@@ -70,19 +88,19 @@
                                 </div>
                             </article>
     
-                            <div class="border-box2">
-                                <article class="row  align-items-center  box2">      
+                            <article class="border-box2">
+                                <div class="row  align-items-center  box2">      
                                     <div class="col-md-8 col-lg-9 text-right">
                                         <h3 id="sacha">Sacha CÉGLIA</h3>
                                         
                                         <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>    
                                     </div>
         
-                                    <div class="col-md-4 col-lg-3">
+                                    <div class="col-md-4 col-lg-3 text-right">
                                         <img src="img/team-pictures/sachaProfil.jpg" alt="">
                                     </div>
-                                </article>
-                            </div>
+                                </div>
+                            </article>
                             <article class="border-box1">
                                 <div class="row justify-content-between align-items-center text-left box1">
                                     <div class="col-md-4 col-lg-3">
@@ -157,9 +175,12 @@
     </footer>
 
     <!-- jquery pour Bootstarp 4 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Charger la donnée movies -->
+    <script src="js/movie-data.js"></script>
+    <script src="js/formulaire.js"></script>
     <!-- Mon script -->
     <script src="js/main.js"></script>
 

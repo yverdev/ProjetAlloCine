@@ -18,6 +18,16 @@
             
     <header>
 
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+
         <div class="container">
             
 
@@ -41,8 +51,8 @@
                 <nav class="row justify-content-between nav-head">
 
                     <div><a href="index.html">Accueil</a></div>
-                    <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
-                    <div><a href="#prochainement">Prochainement</a></div>
+                    <div><a href="index.html#coeur">Coups de coeur</a></div>
+                    <div><a href="index.html#prochainement">Prochainement</a></div>
                     <div><a href="fiche-films.html">Films</a></div>
                     <div><p><i class="fas fa-search"></i></p></div>
                     <div><a href="login.html"><i class="far fa-user"></i></a></div>
@@ -57,7 +67,12 @@
 
     
     <main>
+        <!-- Box Évenement TEL-->
+        <div class="container d-lg-none marquee-rtl marquee-rtl-tel">
 
+            <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+            
+        </div>
     
         <div class="container">
             <div class="container col-lg-4">
@@ -160,7 +175,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Mon script -->
+    <!-- Charger la donnée movies -->
+    <script src="js/movie-data.js"></script>
     <script src="js/formulaire.js"></script>
+    <!-- Mon script -->
+    <script src="js/main.js"></script>
+
 </body>
 </html>

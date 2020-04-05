@@ -17,7 +17,19 @@
 
     <header>
 
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+              <form action="action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+        </div>
+
+
         <div class="container">
+
 
             <div class="row justify-content-between align-items-center">
 
@@ -36,17 +48,15 @@
 
             <div class="nav-head">
 
-                <nav class="row justify-content-between">
+                <nav class="row justify-content-between nav-head">
 
-                    <div><a href="#films-affiche">À l'affiche</a></div>
-                    <div><a href="#coeur">Coups de coeur</a></div>
-                    <div><a href="#prochainement">Prochainement</a></div>
-                    <div><a href="#">Films</a></div>
-                    <div>
-                        <p><i class="fas fa-search"></i></p>
-                    </div>
-                    <div><a href="#"><i class="far fa-user"></i></a></div>
-
+                    <div><a href="index.html">Accueil</a></div>
+                    <div><a href="index.html#coeur">Coups de coeur</a></div>
+                    <div><a href="index.html#prochainement">Prochainement</a></div>
+                    <div><a href="fiche-films.html">Films</a></div>
+                    <div><p><i class="fas fa-search"></i></p></div>
+                    <div><a href="formulaire.html"><i class="far fa-user"></i></a></div>
+                    
                 </nav>
 
             </div>
@@ -59,7 +69,12 @@
 
         <div class="container-fluid movie-bgc">
 
-            <!-- Section fiche détails film et affiche + lien trailer -->
+            <!-- Box Évenement TEL-->
+            <div class="d-lg-none marquee-rtl marquee-rtl-tel">
+                
+                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+                
+            </div>
 
             <section class="container-fluid main-top">
 
@@ -300,9 +315,12 @@
     </footer>
 
     <!-- jquery pour Bootstarp 4 -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Charger la donnée movies -->
+    <script src="js/movie-data.js"></script>
+    <script src="js/formulaire.js"></script>
     <!-- Mon script -->
     <script src="js/main.js"></script>
 
