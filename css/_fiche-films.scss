@@ -1,20 +1,24 @@
 .movie-bgc{
-    background-image: url("../img/fiche-films/bg-jamesBond.jpg");
-    background-size: cover;
-    padding: 0;
-   
-    
+  background-image: url("../img/fiche-films/bg-jamesBond.jpg");
+  background-size: cover;
+  padding: 0;
+ 
+  
 }
 
 h1,h2,h3,h4{
-    font-family: 'Source Sans Pro', sans-serif;
-    
-    
+  font-family: 'Source Sans Pro', sans-serif;
+  
+  
 }
-.box-event{
-    padding-left: 0;
-    padding-right: 0;
+
+h1{
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+  text-shadow: 0px 5px 4px rgba(34,34,34,0.63);
 }
+
 .main-top{
   background-color: rgba(0,0,0,0.6);
   padding-top: 1rem;
@@ -38,12 +42,6 @@ h1,h2,h3,h4{
   }
   
   .movie-img {
-      /* background-image: url("../img/films/James-bond.jpg");
-      background-size: cover; */
-      /* width: 100%;
-      max-width: 300px;
-      max-height: 450px;
-      border-radius: 5px; */
       padding-left: 0;
       padding-right: 0;
       position: relative;
@@ -59,8 +57,6 @@ h1,h2,h3,h4{
 
       img{
       width: 100%;
-      /* max-width: 300px;
-      max-height: 450px; */
       border-radius: 5px;
       }
       
@@ -72,107 +68,250 @@ h1,h2,h3,h4{
 
   .movie-info{
       padding: 1rem;
+
       h4{
           font-size: 1.5rem;
       }
   }
+  
+} 
 
-  .film-content{
-    max-width: 600px;
-    border: 3px solid #222222;
-    padding: 5px;
-    overflow: hidden;
+.synopsis{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-    @keyframes slideInLeft {
-        from {
-          -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-          visibility: visible;
-        }
-      
-        to {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-      }
-      
-      .slideInLeft {
-        -webkit-animation-name: slideInLeft;
-        animation-name: slideInLeft;
-      }
+.watch{
+  h3{
+    padding-left: 20px;
+  }
+}
 
-    .relative{
-        position: relative;
-        &:hover{
-            transform: scale(1.2);
-            box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
-        }
+.movie-actors{
+  h3{
+    margin: 3vw;
+    color: #fecc00;
+    font-size: 3rem;
+    text-shadow: 0px 5px 4px rgba(34,34,34,0.63);
+  }
+}
+
+.movie-actors .distribution-flex{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+
+  article{
+    border: #fecc00 thick double;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: black;
+    font-weight: bolder;
+
+    h4{
+      margin-top: 15px;
+      font-weight: bolder;
     }
-
-    .icon-play{
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-        color: #fecc00;
-        font-size: 3rem;
-    }
-
-    img{
-        max-width: 200px;
-        max-height: 250px;  
-        margin-left: 2px;
-        margin-right: 2px;                  
-    }
+  }
 
 }
+
+.movie-actors article:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
+}
+
+.film-content{
+  max-width: 600px;
+  border: 3px solid #222222;
+  padding: 5px;
+  overflow: hidden;
+
+  @keyframes slideInLeft {
+      from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+      }
+    
+      to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+    
+    .slideInLeft {
+      -webkit-animation-name: slideInLeft;
+      animation-name: slideInLeft;
+    }
+
+  .relative{
+      position: relative;
+      &:hover{
+          transform: scale(1.2);
+          box-shadow: 0px 0px 33px 9px rgba(0,0,0,0.75);
+      }
+  }
+
+  .icon-play{
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      color: #fecc00;
+      font-size: 3rem;
+  }
+
+  img{
+      max-width: 200px;
+      max-height: 250px;  
+      margin-left: 2px;
+      margin-right: 2px;                  
+  }
+
+}
+
+form {
+  border: 2px solid #fecc00;
+  border-radius: 5px;
+  margin: 25px auto 0;
+  padding: 20px;
+  width: 70%;
+  margin-bottom: 50px;
+
+  fieldset{
+      margin-bottom: 20px;
+      border: 2px solid #c0c0c0;
+    }
+      .form-flex{
+          display: flex;
+          flex-direction: column;
+      }
+          legend{
+              font-size: 1.4rem;
+              padding: 0 15px;
+              font-family: 'Source Sans Pro', sans-serif;
+              font-weight: bolder;
+              word-spacing: 1vw;
+              letter-spacing: 1px;
+          }
+              label{
+                  font-weight: bold;
+              }
+                  select, 
+                  form input[type="text"], /*tous les input de type="text*/
+                  form input[type="email"]{ /*tous les input de type="email*/
+                      border: 1px solid #ccc;
+                      border-radius: 5px;
+                      margin: 10px 0;
+                      outline: 0;
+                      padding: 10px;
+                  }
+                      textarea{
+                          border: 1px solid #ccc;
+                          border-radius: 5px;
+                          padding: 10px;
+                          resize: none;
+                          width: 100%;
+                      }
+                          .validation{
+                              text-align: center;
+                          }
+}
+
+
+div .btn{
+  background-color: #252525;
+  border: 0;
+  border-radius: 5px;
+  color: #fecc00;
+  display: inline-block;
+  justify-content: center;
+
+
+  div .btn:hover{
+      background-color: #0056b3;
+      color: #ffb129;
+} 
+
+}
+
+
 @keyframes slideInLeft {
-    from {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  .slideInLeft {
-    -webkit-animation-name: slideInLeft;
-    animation-name: slideInLeft;
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
   }
 
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
 
-  @-webkit-keyframes slideInRight {
-    from {
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+}
+
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
   }
-  
-  @keyframes slideInRight {
-    from {
-      -webkit-transform: translate3d(100%, 0, 0);
-      transform: translate3d(100%, 0, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
-  
-  .slideInRight {
-    -webkit-animation-name: slideInRight;
-    animation-name: slideInRight;
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
   }
-}  
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+/* Media queries responsive (on est en mobile first) */
+
+@media screen and (min-width : 768px){
+
+  .movie-info{
+    text-align: center;
+  }
+
+}
+
+@media screen and (min-width : 992px){
+
+  .movie-actors .distribution-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .movie-actors article{
+    margin: 10px;
+
+  }
+
+}
+
