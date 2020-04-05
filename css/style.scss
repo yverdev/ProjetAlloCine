@@ -117,6 +117,13 @@ body{
     
 }
 
+/* TEST CARD-info*/
+.hide{
+    display: none;
+    /* background-color: red; */
+    
+}
+
 
 
 /************************* HEADER ****************************/
@@ -166,7 +173,7 @@ main{
     @import "_index.scss";
     @import "_fiche-films.scss";
     @import "_formulaire.scss";
-    @import "_mainbackground.scss";
+    @import "_developmentPageGroup.scss";
 
     margin-top: 7vw;
 

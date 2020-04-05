@@ -471,6 +471,12 @@ body {
   padding-top: 7vw;
 }
 
+/* TEST CARD-info*/
+.hide {
+  display: none;
+  /* background-color: red; */
+}
+
 /************************* HEADER ****************************/
 /* .header-fixed{
     width: 100%;
@@ -975,6 +981,81 @@ main .success {
 main .danger {
   background: red;
   color: #fff;
+}
+
+main .group-box .fas {
+  color: #fecc00;
+}
+
+main .group-box .border-box1 {
+  background: linear-gradient(135deg, #fec000 0%, rgba(254, 196, 15, 0) 6%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5px;
+  padding-top: 2px;
+  margin-bottom: 0.5vw;
+}
+
+main .group-box .border-box1 .box1 {
+  margin-right: 2px;
+  margin-left: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #222222;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(78%, white), color-stop(95%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, white 78%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0) 100%);
+}
+
+main .group-box .border-box1 .box1 img {
+  border-radius: 5px;
+}
+
+main .group-box .border-box1 .box1 blockquote {
+  max-width: 70%;
+  font-style: italic;
+}
+
+main .group-box .border-box2 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(239, 180, 0, 0) 94%, #fec000 100%);
+  padding-top: 2px;
+  border-radius: 5px;
+  margin-bottom: 0.5vw;
+}
+
+main .group-box .border-box2 .box2 {
+  margin-left: 2px;
+  padding-top: 25px;
+  margin-right: 2px;
+  padding-bottom: 25px;
+  background-color: #222222;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(5%, rgba(255, 255, 255, 0)), color-stop(22%, white), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 5%, white 22%, white 100%);
+}
+
+main .group-box .border-box2 .box2 img {
+  border-radius: 5px;
+}
+
+main .group-box .border-box2 .box2 blockquote {
+  max-width: 70%;
+  font-style: italic;
+}
+
+main .group-box h3 {
+  padding-bottom: 1vw;
+}
+
+main .group-box img {
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+main .group-box img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
 /************************* FOOTER ****************************/
