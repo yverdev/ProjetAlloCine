@@ -5,9 +5,9 @@
 var list = $('.list');
 console.log('list');
 // On cache la div.details au chargement de la page
-$('div.details').hide(); //where is the div.details?
+$('div.details').hide();
 // On affiche le nombre de films
-$('.supertitle span').text(movies.length) //where the class?
+$('.supertitle span').text(movies.length)
 
 // On génère les items des films dans la div.list
 for(var i=0; i < movies.length; i++) {
@@ -66,16 +66,6 @@ for(var i=0; i < movies.length; i++) {
       
 		`)
 }
-
-
-
-function getDetail() {
-    window.location.href = 'fiche-films.html?id=' + $(this).data('id');
-}
-
-$('div.card').on('click', getDetail);
-
-
 
 
 /* $('div.card').hover(function(){
