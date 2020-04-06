@@ -1,0 +1,106 @@
+
+h1{
+    margin: 3vw;
+    color: #fecc00;
+    font-size: 3rem;
+    text-shadow: 0px 5px 4px rgba(34, 34, 34, 0.63);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    word-spacing: 1vw;
+    letter-spacing: 1px;
+  }
+  
+/* FORMULAIRE */
+form {
+    border: 2px solid #fecc00;
+    border-radius: 5px;
+    margin: 25px auto 0;
+    padding: 20px;
+    width: 70%;
+    margin-bottom: 50px;
+
+    fieldset{
+        margin-bottom: 20px;
+        border: 2px solid #c0c0c0;
+      }
+        .form-flex{
+            display: flex;
+            flex-direction: column;
+        }
+            legend{
+                font-size: 1.4rem;
+                padding: 0 15px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: bolder;
+                word-spacing: 1vw;
+                letter-spacing: 1px;
+            }
+                label{
+                    font-weight: bold;
+                }
+                    select, 
+                    form input[type="text"], /*tous les input de type="text*/
+                    form input[type="email"]{ /*tous les input de type="email*/
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        margin: 10px 0;
+                        outline: 0;
+                        padding: 10px;
+                    }
+                        textarea{
+                            border: 1px solid #ccc;
+                            border-radius: 5px;
+                            padding: 10px;
+                            resize: none;
+                            width: 100%;
+                        }
+                            .validation{
+                                text-align: center;
+                            }
+}
+
+footer{
+    margin:-100px auto 0;
+}
+
+
+div .btn{
+    background-color: #252525;
+    border: 0;
+    border-radius: 5px;
+    color: #fecc00;
+    display: inline-block;
+    margin: 10px 0 15px;
+    padding: 10px 15px;
+
+
+    div .btn:hover{
+        background-color: #0056b3;
+        color: #ffb129;
+} 
+ 
+  }
+  
+  
+ 
+  
+  p.error {
+    color: red;
+    display: none;
+   }
+  
+  div#control {
+    padding: 10px;
+    font-size: 1.2em;
+    display: none;
+   }
+  
+  .success {
+    background: green;
+    color: #fff;
+   }
+  
+  .danger {
+    background: red;
+    color: #fff;
+   }
