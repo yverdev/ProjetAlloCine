@@ -1130,6 +1130,15 @@ main .danger {
   color: #fff;
 }
 
+main main {
+  position: relative;
+}
+
+main footer {
+  position: absolute;
+  bottom: 0;
+}
+
 main .group-box .fas {
   color: #fecc00;
 }
