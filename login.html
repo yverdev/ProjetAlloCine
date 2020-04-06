@@ -15,45 +15,57 @@
 </head>
 
 <body>
-            
-    <header>
+    <div class="header-fixed">
 
-        <div class="container">
-            
-
-            <div class="row justify-content-between align-items-center">
-
-                <div class="col-lg-4">
-                    <a href="index.html"><img class="logo-header" src="img/logo-trans.png" alt="logo de Hellocine"></a>
+        <header>
+            <!-- TEST Search Full Screen -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                  <form action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
                 </div>
-                
-                <!-- Box Évenement Tablette-->
-                <div class="d-none d-lg-block col-lg-8 marquee-rtl">
+            </div>
+            <!-- FIN TEST -->
+            <div class="container">
+            
+
+                <div class="row justify-content-between align-items-center">
+
+                    <div class="col-lg-4">
+                        <a href="index.html"><img class="logo-header" src="img/Hellociné_2.png" alt="logo de Hellocine"></a>
+                    </div>
                     
-                    <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
-                    
+                    <!-- Box Évenement Tablette-->
+                    <div class="d-none d-lg-block col-lg-8 marquee-rtl">
+                        
+                        <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="nav-head">
+
+                    <nav class="row justify-content-between nav-head">
+
+                        <div><a href="index.html">Accueil</a></div>
+                        <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
+                        <div><a href="#prochainement.html">Prochainement</a></div>
+                        <div><a href="fiche-films.html">Films</a></div>
+                        <div><p><i class="fas fa-search"></i></p></div>
+                        <div><a><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="far fa-user"></i></button></a></div>
+                        
+                    </nav>
+                        
                 </div>
 
             </div>
-
-            <div class="nav-head">
-
-                <nav class="row justify-content-between nav-head">
-
-                    <div><a href="index.html">Accueil</a></div>
-                    <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
-                    <div><a href="#prochainement">Prochainement</a></div>
-                    <div><a href="fiche-films.html">Films</a></div>
-                    <div><p><i class="fas fa-search"></i></p></div>
-                    <div><a href="login.html"><i class="far fa-user"></i></a></div>
-                    
-                </nav>
-                    
-            </div>
-
-        </div>
             
-    </header>
+        </header>
+    </div>
 
     
     <main>
