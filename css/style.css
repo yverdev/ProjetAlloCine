@@ -344,6 +344,80 @@ template {
   display: none;
 }
 
+/* TEST Search Full Screen */
+/* The overlay effect with black background */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black with a little bit see-through */
+}
+
+/* The content */
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+/* Close button */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+  color: #fecc00;
+}
+
+.overlay .closebtn:hover {
+  color: #fff;
+}
+
+/* Style the search field */
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid #fecc00;
+  float: left;
+  width: 80%;
+  background: none;
+}
+
+.overlay input[type=text]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(29%, rgba(74, 56, 0, 0)), to(rgba(254, 192, 0, 0.15)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(74, 56, 0, 0) 29%, rgba(254, 192, 0, 0.15) 100%);
+}
+
+/* Style the submit button */
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: none;
+  font-size: 2rem;
+  color: #fecc00;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.overlay button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/* Fin TEST */
 body {
   background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
@@ -392,12 +466,34 @@ body {
   color: #fecc00;
 }
 
+.marquee-rtl-tel {
+  margin: 0;
+  padding-top: 7vw;
+}
+
+/* TEST CARD-info*/
+.hide {
+  display: none;
+  /* background-color: red; */
+}
+
 /************************* HEADER ****************************/
+/* .header-fixed{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 0px;
+} */
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#222222), color-stop(0%, #4c4c4c), color-stop(0%, #222222), color-stop(75%, #222222), color-stop(98%, #4c4c4c), color-stop(98%, #4c4c4c), to(#131313));
   background: linear-gradient(to bottom, #222222 0%, #4c4c4c 0%, #222222 0%, #222222 75%, #4c4c4c 98%, #4c4c4c 98%, #131313 100%);
   background-size: 100%;
   color: #fff;
+  /* position: relative; */
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
 }
 
 header .logo-header {
@@ -428,6 +524,7 @@ header .nav-head a:hover {
 main {
   /* Media queries responsive (on est en mobile first) */
   /* FORMULAIRE */
+  margin-top: 7vw;
 }
 
 main .hellocine-content {
@@ -485,6 +582,7 @@ main .hellocine-content .box-office {
 
 main .hellocine-content .box-office h2 {
   padding: 2rem;
+  text-shadow: 0px 2px 2px rgba(245, 245, 245, 0.63);
 }
 
 main .hellocine-content .box-office .carousel-actu {
@@ -506,6 +604,7 @@ main .hellocine-content .coups-coeur {
 
 main .hellocine-content .coups-coeur h2 {
   padding: 2rem;
+  text-shadow: 0px 2px 2px rgba(245, 245, 245, 0.63);
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .fas {
@@ -523,8 +622,9 @@ main .hellocine-content .coups-coeur .coups-coeur-box .border-box1 .box1 {
   margin-left: 2px;
   padding-top: 25px;
   padding-bottom: 3vw;
-  background-color: #fff;
+  background-color: #222222;
   border-radius: 5px;
+  color: #fff;
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .border-box1 .box1 img {
@@ -547,8 +647,9 @@ main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 .box2 {
   padding-top: 3vw;
   margin-right: 2px;
   padding-bottom: 25px;
-  background-color: #fff;
+  background-color: #222222;
   border-radius: 5px;
+  color: #fff;
 }
 
 main .hellocine-content .coups-coeur .coups-coeur-box .border-box2 .box2 img {
@@ -1026,6 +1127,81 @@ main .success {
 main .danger {
   background: red;
   color: #fff;
+}
+
+main .group-box .fas {
+  color: #fecc00;
+}
+
+main .group-box .border-box1 {
+  background: linear-gradient(135deg, #fec000 0%, rgba(254, 196, 15, 0) 6%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 5px;
+  padding-top: 2px;
+  margin-bottom: 0.5vw;
+}
+
+main .group-box .border-box1 .box1 {
+  margin-right: 2px;
+  margin-left: 2px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #222222;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(78%, white), color-stop(95%, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, white 0%, white 78%, rgba(255, 255, 255, 0) 95%, rgba(255, 255, 255, 0) 100%);
+}
+
+main .group-box .border-box1 .box1 img {
+  border-radius: 5px;
+}
+
+main .group-box .border-box1 .box1 blockquote {
+  max-width: 70%;
+  font-style: italic;
+}
+
+main .group-box .border-box2 {
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0) 0%, rgba(239, 180, 0, 0) 94%, #fec000 100%);
+  padding-top: 2px;
+  border-radius: 5px;
+  margin-bottom: 0.5vw;
+}
+
+main .group-box .border-box2 .box2 {
+  margin-left: 2px;
+  padding-top: 25px;
+  margin-right: 2px;
+  padding-bottom: 25px;
+  background-color: #222222;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(5%, rgba(255, 255, 255, 0)), color-stop(22%, white), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 5%, white 22%, white 100%);
+}
+
+main .group-box .border-box2 .box2 img {
+  border-radius: 5px;
+}
+
+main .group-box .border-box2 .box2 blockquote {
+  max-width: 70%;
+  font-style: italic;
+}
+
+main .group-box h3 {
+  padding-bottom: 1vw;
+}
+
+main .group-box img {
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+main .group-box img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
 /************************* FOOTER ****************************/
