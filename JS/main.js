@@ -43,7 +43,7 @@ for(var i=0; i < movies.length; i++) {
       }
 
       </style>
-			<div data-index="${i}" class="col-12 col-md-4 cl-lg-3 item text-center  test">
+			<div data-index="${movies[i].image}" class="col-12 col-md-4 cl-lg-3 item text-center  test">
 
 				
           
@@ -67,6 +67,11 @@ for(var i=0; i < movies.length; i++) {
 		`)
 }
 
+function getDetail() {
+  window.location.href = 'fiche-films.html?id=' + $(this).data('id'); //
+}
+
+$('div.test').on('click', getDetail);  // Sur l'elt div.test Au click sur l'image appeller la fonction getDetail
 
 /* $('div.card').hover(function(){
     $(this).slideUp(800);
@@ -106,11 +111,9 @@ for(var i=0; i < movies.length; i++) {
 /* 
 YANN
 */
-/* function getDetail() {
-  window.location.href = 'fiche-films.html?id=' + $(this).data('id');
-}
+/* 
 
-$('div.card').on('click', getDetail);
+
 
 var idFilm = $('.card')
 idFilm.mouseover(function(e){
@@ -119,7 +122,7 @@ idFilm.mouseover(function(e){
 }).mouseout(function(e){
   $('.card-img-top').show(2000, 'linear');
   e.stopPropagation();
-  e.eventPresentDefault();
+  e.eventPreventDefault();// Pour empecher le rechargement
 }) */
 
 /* 
