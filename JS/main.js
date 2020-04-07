@@ -20,6 +20,7 @@ for(var i=0; i < movies.length; i++) {
       height: 400px;
       overflow: hidden;
       background-size: cover;
+      margin 1%;
       padding: 0px;}
 
       .card-info {top: 100%;
