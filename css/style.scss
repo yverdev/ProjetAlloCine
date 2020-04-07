@@ -172,9 +172,8 @@ header{
 main{
     @import "_index.scss";
     @import "_fiche-films.scss";
-    @import "_formulaire.scss";
     @import "_developmentPageGroup.scss";
-    @import "_login.scss";
+    @import "_inscription.scss";
 
     margin-top: 7vw;
 
@@ -183,6 +182,7 @@ main{
 footer{
     background-color: #222222;
     min-height: 5vw;
+    margin-top: 5vh;
 
     a{
         color: #fecc00;
