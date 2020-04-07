@@ -44,7 +44,7 @@ for(var i=0; i < movies.length; i++) {
       }
 
       </style>
-			<div data-index="${movies[i].image}" class="col-12 col-md-4 cl-lg-3 item text-center  test">
+			<div data-index="${movies[i].image}" class="cl-lg-3 item text-center  test">
 
 				
           
