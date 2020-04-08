@@ -2,77 +2,48 @@
 	* AU CHARGEMENT DE LA PAGE ON AFFICHE LA LISTE DES FILMS DEPUIS Le ARRAY movies (dans js/data.js)
 */
 // Selection de la liste des films
-var list = $('.list');
-console.log('list');
-// On cache la div.details au chargement de la page
-$('div.details').hide();
+var alAfficheElt = $('.list'); // Tous les films à l'affiche
+var aVenirElt = $('.nextlist'); // Films à venir
+
 // On affiche le nombre de films
 $('.supertitle span').text(movies.length)
 
 // On génère les items des films dans la div.list
-for(var i=0; i < movies.length; i++) {
-  list.append(`
-      <style>
-      
-      .test {background-image: url(${movies[i].image});position: relative;
-      
-      width: 300px;
-      height: 400px;
-      overflow: hidden;
-      background-size: cover;
-      margin 1%;
-      padding: 0px;}
+function printMoviesList(critere) {
+  let moviesToPrint; // liste des films à afficher
+  if (critere == 'alaffiche') {
+    target = alAfficheElt;
+    moviesToPrint = movies;
+  }
+  else if (critere == 'avenir') {
+    target = aVenirElt;
+    moviesToPrint = movies.filter(function (el) { return el.nearly == true })
 
-      .card-info {top: 100%;
-        position: relative;
-        transition: all .8s ease-in-out;
-        height: 100%;
-        background-color: rgba(0,0,0,0.8);
-        color: #fff;}
-        
-      .card-info h2{
-            margin: 0;
-            
-        }
-    
+  }
+  for (var i = 0; i < moviesToPrint.length; i++) {
+    target.append(`
+        <div style="background-image:url(${moviesToPrint[i].image})" 
+             data-index="${movies[i].id}" 
+             class="col-12 col-md-4 cl-lg-3 item text-center test">
+            <div class="card-info  ">
+              <h2>${moviesToPrint[i].title}</h2>
+              <p>${moviesToPrint[i].date}</p>
+              <p>${moviesToPrint[i].genre}</p>
+              <p>${moviesToPrint[i].director}</p>
+              <p>${moviesToPrint[i].duration}</p>
+            </div>  
+        </div>   
+      `)
+  }
+  $('div.item').on('click', getDetail);  // Sur l'elt div.test Au click sur l'image appeller la fonction getDetail
+} // fin function printMoviesList()
 
-      .test:hover > .card-info{
-        top: 0;
-      }
-      .test:hover{
-        background:hidden;
-      }
-
-      </style>
-			<div data-index="${movies[i].image}" class="cl-lg-3 item text-center  test">
-
-				
-          
-
-          <div class="card-info  ">
-            <h2>${movies[i].title}</h2>
-            <p>${movies[i].date}</p>
-            <p>${movies[i].genre}</p>
-            <p>${movies[i].director}</p>
-            <p>${movies[i].duration}</p>
-
-          </div> 
-          
-            
-          
-        
-          
-        
-      </div>
-      
-		`)
-}
 
 function getDetail() {
-  window.location.href = 'fiche-films.html?id=' + $(this).data('id'); //
+  window.location.href = 'fiche-films.html?id=' + $(this).data('index'); //
 }
 
-$('div.test').on('click', getDetail);  // Sur l'elt div.test Au click sur l'image appeller la fonction getDetail
+
 
 /* $('div.card').hover(function(){
     $(this).slideUp(800);
@@ -93,20 +64,20 @@ $('div.test').on('click', getDetail);  // Sur l'elt div.test Au click sur l'imag
   console.log('.card-info');
 }); */
 
-    /* $('div.card').hover(function(){
-      var thisCard = $('div.car').val();
+/* $('div.card').hover(function(){
+  var thisCard = $('div.car').val();
 
-        
-      if($('.card-img-top').hover()){
-        $(this).slideUp(800).val();
-          
-        
-      };
+    
+  if($('.card-img-top').hover()){
+    $(this).slideUp(800).val();
+      
+    
+  };
 
-      $('.card-info').removeClass(function(){
-        $(this).removeClass('hide');
-      });
-    }); */
+  $('.card-info').removeClass(function(){
+    $(this).removeClass('hide');
+  });
+}); */
 
 
 /* 
@@ -139,14 +110,16 @@ console.log('searchBtn');
 
 // Open the full screen search box
 function openSearch() {
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  // Close the full screen search box
-  function closeSearch() {
-    document.getElementById("myOverlay").style.display = "none";
-  }
+  document.getElementById("myOverlay").style.display = "block";
+}
 
+// Close the full screen search box
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+printMoviesList('alaffiche');
+printMoviesList('avenir');
 searchBtn.on('click', openSearch);
 
 /* Fin TEST */

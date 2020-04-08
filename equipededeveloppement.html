@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Development Home Page Group</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>         
+<body>
     <header>
 
         <div id="myOverlay" class="overlay">
             <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
             <div class="overlay-content">
-              <form action="action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+                <form action="action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
             </div>
         </div>
 
@@ -33,7 +35,10 @@
                 </div>
                 <!-- Box Évenement Tablette-->
                 <div class="d-none d-lg-block col-lg-8 marquee-rtl">
-                    <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+                    <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span
+                            class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span>
+                        juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.
+                    </div>
                 </div>
             </div>
 
@@ -41,50 +46,53 @@
                 <nav class="row justify-content-between nav-head">
 
                     <div><a href="index.html">Accueil</a></div>
-                    <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
                     <div><a href="index.html#prochainement">Prochainement</a></div>
-                    <div><a href="fiche-films.html">Films</a></div>
-                    <div><p><i class="fas fa-search"></i></p></div>
-                    <div><a><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="far fa-user"></i></button></a></div>
-                    
+                    <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
+                    <div>
+                        <p><i class="fas fa-search"></i></p>
+                    </div>
+                    <div><a><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal"
+                                data-whatever="@mdo"><i class="far fa-user"></i></button></a></div>
+
                 </nav>
             </div>
         </div>
     </header>
 
-    
+
     <main>
         <!-- Pop up Login-->
         <div class="login">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Pseudo:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                        <p class="error"></p>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Mot de passe:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                            <button type="button" class="btn btn-secondary">Login</button>
-                            <p class="error"></p>
-                        </div>                  
-                    </form>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Pseudo:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                    <p class="error"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Mot de passe:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                    <button type="button" class="btn btn-secondary">Login</button>
+                                    <p class="error"></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <a href="login.html"><button type="button" class="btn btn-secondary">S'inscrire</button></a>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <a href="inscription.html"><button type="button" class="btn btn-secondary">S'inscrire</button></a>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -92,43 +100,53 @@
             <!-- Box Évenement TEL-->
             <div class="container d-lg-none marquee-rtl marquee-rtl-tel">
 
-                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
-                
+                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span
+                        class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin
+                    et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+
             </div>
-            <div class="justify-content-around flex-nowrap " id="mainbackground">     
+            <div class="justify-content-around flex-nowrap " id="mainbackground">
                 <div class="box-event">
-                    
+
                     <!-- Development Group -->
                     <section class="text-center coups-coeur" id="coeur">
                         <h2>Le Groupe de travail</h2>
-                        
+
                         <div class="container group-box">
-                            
+
                             <article class="border-box1">
                                 <div class="row justify-content-between align-items-center text-left box1">
                                     <div class="col-md-4 col-lg-3">
                                         <img src="img/team-pictures/lauraProfil.jpg" alt="">
                                     </div>
-        
+
 
                                     <div class="col-md-8 col-lg-9">
                                         <!-- <div class="row"> -->
-                                            <h3 id="laura">Laura LAMASSOURRE</h3>
-            
-                                            <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>
+                                        <h3 id="laura">Laura LAMASSOURRE</h3>
+
+                                        <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias
+                                            quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni
+                                            inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                                class="fas fa-quote-right"></i></blockquote>
                                         <!-- </div> -->
                                     </div>
                                 </div>
                             </article>
-    
+
                             <article class="border-box2">
-                                <div class="row  align-items-center  box2">      
+                                <div class="row  align-items-center  box2">
                                     <div class="col-md-8 col-lg-9 text-right">
                                         <h3 id="sacha">Sacha CÉGLIA</h3>
-                                        
-                                        <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>    
+
+                                        <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum
+                                            dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum
+                                            molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a,
+                                            magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                                class="fas fa-quote-right"></i></blockquote>
                                     </div>
-        
+
                                     <div class="col-md-4 col-lg-3 text-right">
                                         <img src="img/team-pictures/sachaProfil.jpg" alt="">
                                     </div>
@@ -139,24 +157,32 @@
                                     <div class="col-md-4 col-lg-3">
                                         <img src="img/team-pictures/gillesProfil.jpg" alt="">
                                     </div>
-        
+
                                     <div class="col-md-8 col-lg-9">
                                         <!-- <div class="row"> -->
-                                            <h3 id="gilles">Gilles DA SILVA SANTOS</h3>
-            
-                                            <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>
+                                        <h3 id="gilles">Gilles DA SILVA SANTOS</h3>
+
+                                        <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias
+                                            quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni
+                                            inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                                class="fas fa-quote-right"></i></blockquote>
                                         <!-- </div> -->
                                     </div>
                                 </div>
                             </article>
                             <div class="border-box2">
-                                <article class="row  align-items-center  box2">      
+                                <article class="row  align-items-center  box2">
                                     <div class="col-md-8 col-lg-9 text-right">
                                         <h3 id="fred">Frédérick VU</h3>
-                                        
-                                        <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>    
+
+                                        <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum
+                                            dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum
+                                            molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a,
+                                            magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                                class="fas fa-quote-right"></i></blockquote>
                                     </div>
-        
+
                                     <div class="col-md-4 col-lg-3">
                                         <img src="img/team-pictures/fredProfil.jpg" "">
                                     </div>
@@ -167,20 +193,24 @@
                                     <div class="col-md-4 col-lg-3">
                                         <img src="img/team-pictures/yannProfil.jpg" alt="">
                                     </div>
-        
+
                                     <div class="col-md-8 col-lg-9">
                                         <!-- <div class="row"> -->
-                                            <h3 id="yann">Yann YVER</h3>
-            
-                                            <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>
+                                        <h3 id="yann">Yann YVER</h3>
+
+                                        <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit
+                                            amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias
+                                            quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni
+                                            inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                                class="fas fa-quote-right"></i></blockquote>
                                         <!-- </div> -->
                                     </div>
                                 </div>
                             </article>
                         </div>
                     </section>
-                    
-                </div> 
+
+                </div>
             </div>
         </div>
     </main>
@@ -199,9 +229,10 @@
                 <nav class="row justify-content-between nav-foot-2">
                     <div class="lien-deco"><a href="developmentpagegroup.html#laura">Laura LAMASSOURE</a></div>
                     <div class="lien-deco"><a href="developmentpagegroup.html#sacha">Sacha CÉGLIA</a></div>
-                    <div class="lien-deco"><a href="developmentpagegroup.html#gilles">Gilles DOS SANTOS DA SILVA</a></div>
+                    <div class="lien-deco"><a href="developmentpagegroup.html#gilles">Gilles DOS SANTOS DA SILVA</a>
+                    </div>
                     <div class="lien-deco"><a href="developmentpagegroup.html#fred">Frédérick VU</a></div>
-                    <div class="lien-deco"><a href="developmentpagegroup.html#yann">Yann YVER</a></div>   
+                    <div class="lien-deco"><a href="developmentpagegroup.html#yann">Yann YVER</a></div>
                 </nav>
             </div>
         </div>
@@ -209,12 +240,18 @@
 
     <!-- jquery pour Bootstarp 4 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- Charger la donnée movies -->
     <script src="js/movie-data.js"></script>
+    <script src="js/formulaire.js"></script>
     <!-- Mon script -->
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

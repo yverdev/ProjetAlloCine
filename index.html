@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Hellocine</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -14,102 +16,111 @@
 </head>
 
 <body>
-        <div class="header-fixed">
+    <div class="header-fixed">
 
-           <header>
-               <!-- TEST Search Full Screen -->
-               <div id="myOverlay" class="overlay">
-                   <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
-                   <div class="overlay-content">
-                     <form action="action_page.php">
-                       <input type="text" placeholder="Search.." name="search">
-                       <button type="submit"><i class="fa fa-search"></i></button>
-                     </form>
-                   </div>
-               </div>
-               <!-- FIN TEST -->
-               <div class="container">
-       
-                   <div class="row justify-content-between align-items-center box-header-un">
-       
-                       <div class="col-lg-4">
-                           <a href="index.html"><img class="logo-header" src="img/Hellociné_2.png" alt="logo de Hellocine"></a>
-                       </div>
-                       
-                       <!-- Box Évenement Tablette-->
-                       <div class="d-none d-lg-block col-lg-8 marquee-rtl">
-                           
-                           <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
-                           
-                       </div>
-       
-                   </div>
-       
-                   <div class="">
-       
-                       <nav class="row justify-content-between nav-head">
-       
+        <header>
+            <!-- TEST Search Full Screen -->
+            <div id="myOverlay" class="overlay">
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                    <form action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!-- FIN TEST -->
+            <div class="container">
+
+                <div class="row justify-content-between align-items-center box-header-un">
+
+                    <div class="col-lg-4">
+                        <a href="index.html"><img class="logo-header" src="img/Hellociné_2.png"
+                                alt="logo de Hellocine"></a>
+                    </div>
+
+                    <!-- Box Évenement Tablette-->
+                    <div class="d-none d-lg-block col-lg-8 marquee-rtl">
+
+                        <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche
+                            <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span
+                                class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans
+                            tous les cinémas participants.</div>
+
+                    </div>
+
+                </div>
+
+                <div class="">
+
+                    <nav class="row justify-content-between nav-head">
+
                         <div><a href="index.html">Accueil</a></div>
-                        <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
                         <div><a href="index.html#prochainement">Prochainement</a></div>
-                        <div><a href="fiche-films.html">Films</a></div>
-                        <div><p><i class="fas fa-search"></i></p></div>
-                        <div><a><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i class="far fa-user"></i></button></a></div>
-                           
-                       </nav>
-                           
-                   </div>
-       
-               </div>
-                   
-           </header>
-       </div>     
+                        <div><a href="equipededeveloppement.html">L'équipe de développement</a></div>
+                        <div>
+                            <p><i class="fas fa-search"></i></p>
+                        </div>
+                        <div><a><button type="button" class="btn" data-toggle="modal" data-target="#exampleModal"
+                                    data-whatever="@mdo"><i class="far fa-user"></i></button></a></div>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+    </div>
 
 
     <main>
 
-         <!-- Pop up Login-->
-         <div class="login">
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- Pop up Login-->
+        <div class="login">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Pseudo:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                        <p class="error"></p>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
                         </div>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Mot de passe:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                            <button type="button" class="btn btn-secondary">Login</button>
-                            <p class="error"></p>
-                        </div>                  
-                    </form>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Pseudo:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                    <p class="error"></p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Mot de passe:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                    <button type="button" class="btn btn-secondary">Login</button>
+                                    <p class="error"></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                            <a href="login.html"><button type="button" class="btn btn-secondary">S'inscrire</button></a>
+                        </div>
                     </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                    <a href="inscription.html"><button type="button" class="btn btn-secondary">S'inscrire</button></a>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
 
         <div class="container-fluid hellocine-content">
-            
+
             <!-- Box Évenement TEL-->
             <div class="container d-lg-none marquee-rtl marquee-rtl-tel">
 
-                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
-                
+                <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span
+                        class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin
+                    et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.</div>
+
             </div>
 
             <section class="box-office">
@@ -117,9 +128,9 @@
 
                 <h2 class="text-center">Box Office</h2>
 
-                 <!-- Carousel Actu -->
-                 <div id="carouselExampleIndicators" class="container carousel slide" data-ride="carousel">
-                    
+                <!-- Carousel Actu -->
+                <div id="carouselExampleIndicators" class="container carousel slide" data-ride="carousel">
+
 
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -128,30 +139,32 @@
                     </ol>
 
                     <div class="carousel-inner carousel-actu">
-                        
+
 
                         <div class="carousel-item active">
-                        
-                            
-                            <img class="d-block w-100" src="img/actu/bad-boys-for-life-5e1f8ac52b5d1.jpg" alt="First slide" >
-                            
-                            
 
-                            <div class="carousel-caption d-none d-md-block" >
+
+                            <img class="d-block w-100" src="img/actu/bad-boys-for-life-5e1f8ac52b5d1.jpg"
+                                alt="First slide">
+
+
+
+                            <div class="carousel-caption d-none d-md-block">
                                 <h5>Bad Boys 3</h5>
                             </div>
-                            
+
                         </div>
 
                         <div class="carousel-item">
 
-                            <img class="d-block w-100" src="img/actu/spiderman-far-from-home-movie-6e.jpg" alt="Second slide">
-                            
+                            <img class="d-block w-100" src="img/actu/spiderman-far-from-home-movie-6e.jpg"
+                                alt="Second slide">
+
 
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Spider-man : Far From Home</h5>
-                                
-                                
+
+
                             </div>
 
                         </div>
@@ -162,7 +175,7 @@
 
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Fast & Furious 9</h5>
-                                
+
                             </div>
 
                         </div>
@@ -182,20 +195,20 @@
                     </div>
 
                 </div>
-                
+
             </section>
 
             <!-- Films à l'affiche -->
             <section class="  films-affiche ">
-                
+
                 <div class="container">
 
-                
+
                     <h1 class="text-center">Films à l'affiche</h1>
 
-                    <!-- /* Essaie animation sur affiche film */ -->   
+                    <!-- /* Essaie animation sur affiche film */ -->
                     <!-- https://www.youtube.com/watch?v=M7Dae-7nfow -->
-                        
+
                     <!-- <div class="container justify-content-around  films-affiche-box">
                         
                         <div class="box-affiche">
@@ -223,11 +236,11 @@
                         <div class="row">
 
                         </div> -->
-                        <!-- <div class="img-test">
+                    <!-- <div class="img-test">
                             <img src="img/films/trolls2.jpg" alt="">
                             
                         </div> -->
-                        <!-- <div class="box-hidden">
+                    <!-- <div class="box-hidden">
                             <h2>James-bond</h2>
                             <p>Mourir peut attendre</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias mollitia ullam saepe quam necessitatibus ipsam cupiditate beatae.</p>
@@ -235,17 +248,17 @@
                             <button>Bande annonce</button>
                             
                         </div> -->
-                        
+
                     <!-- </div> -->
-                    
+
                     <!-- Div pour le contenue Film à l'affiche -->
                     <div class="row list">
 
                     </div>
-                
+
                 </div>
 
-                
+
 
 
             </section>
@@ -269,9 +282,13 @@
                             <div class="col-md-8 col-lg-9">
                                 <!-- <div class="row"> -->
 
-                                    <h3>La rédaction</h3>
-    
-                                    <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>
+                                <h3>La rédaction</h3>
+
+                                <blockquote class=""><i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam
+                                    voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias
+                                    incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i>
+                                </blockquote>
 
                                 <!-- </div> -->
                             </div>
@@ -284,12 +301,16 @@
                     <div class="border-box2">
 
                         <article class="row  align-items-center  box2">
-                            
+
                             <div class="col-md-8 col-lg-9 text-right">
                                 <h3 class="">Les internautes</h3>
-                                
-                                <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore molestias incidunt quasi totam ad corporis saepe fugiat.<i class="fas fa-quote-right"></i></blockquote>
-                                
+
+                                <blockquote class="d-inline-block"><i class="fas fa-quote-left"></i>Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Quasi veritatis voluptate eum molestias
+                                    quibusdam voluptas perferendis! Repudiandae molestiae harum a, magni inventore
+                                    molestias incidunt quasi totam ad corporis saepe fugiat.<i
+                                        class="fas fa-quote-right"></i></blockquote>
+
                             </div>
 
                             <div class="col-md-4 col-lg-3 text-right">
@@ -310,17 +331,17 @@
                 <div class="container">
 
                     <h2>Films à venir</h2>
-                        
+
                     <!-- Div pour le contenue Film à venir -->
-                    <div class="row list">
-    
+                    <div class="row nextlist">
+
                     </div>
 
                 </div>
 
             </section>
-        
-                    
+
+
 
         </div>
 
@@ -334,12 +355,14 @@
 
                 <nav class="row justify-content-center nav-foot-1">
 
-                    <div class="fa-deco"><a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="fa-deco"><a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                     <div class="fa-deco"><a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a></div>
-                    <div class="fa-deco"><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a></div>
+                    <div class="fa-deco"><a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram"></i></a>
+                    </div>
 
                 </nav>
-                
+
             </div>
 
             <div class=" ">
@@ -348,25 +371,35 @@
 
                     <div class="lien-deco"><a href="developmentpagegroup.html#laura">Laura LAMASSOURE</a></div>
                     <div class="lien-deco"><a href="developmentpagegroup.html#sacha">Sacha CÉGLIA</a></div>
-                    <div class="lien-deco"><a href="developmentpagegroup.html#gilles">Gilles DOS SANTOS DA SILVA</a></div>
+                    <div class="lien-deco"><a href="developmentpagegroup.html#gilles">Gilles DOS SANTOS DA SILVA</a>
+                    </div>
                     <div class="lien-deco"><a href="developmentpagegroup.html#fred">Frédérick VU</a></div>
-                    <div class="lien-deco"><a href="developmentpagegroup.html#yann">Yann YVER</a></div> 
-                    
+                    <div class="lien-deco"><a href="developmentpagegroup.html#yann">Yann YVER</a></div>
+
                 </nav>
             </div>
 
         </div>
-        
+
     </footer>
-    
+
     <!-- jquery pour Bootstarp 4 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <!-- Charger la donnée movies -->
     <script src="js/movie-data.js"></script>
+    <!-- Charger les functions utilitaires -->
+    <script src="js/utilities.js"></script>
+    <script src="js/formulaire.js"></script>
     <!-- Mon script -->
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
