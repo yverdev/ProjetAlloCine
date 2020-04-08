@@ -172,7 +172,7 @@ function getMoviesFromLocalStorage() {
 }
 
 function saveMoviesInLocalStorage() {
-	localStorage.setItem('movies', movies);
+	localStorage.setItem('movies', JSON.stringify(movies));
 }
 
 var movies = getMoviesFromLocalStorage();
