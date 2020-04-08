@@ -30,6 +30,9 @@ function getMovie() {
     return movie;
 }
 
+$('.trailer-modal .close').on('click', function () {
+    $('.trailer-modal iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+  });
 /* 
  printMovieDetail()
  Afficher les details du film
@@ -49,7 +52,7 @@ function printMovieDetail() {
     dateElt.text(printDateFr(movie.date));
     durationElt.text(printDuration(movie.duration));
     imgElt.attr('src', movie.image);
-    iframe.attr('src', movie.traileryt);
+    iframe.attr('src', movie.traileryt + "?version=3&enablejsapi=1");
     // Afficher la liste des acteurs
     var actorsStr = '';
     for (var actor of movie.actors) {

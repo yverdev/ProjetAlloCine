@@ -22,35 +22,7 @@ function printMoviesList(critere) {
   }
   for (var i = 0; i < moviesToPrint.length; i++) {
     target.append(`
-    <style>
-    .item {position: relative;
-    width: 300px;
-    height: 400px;
-    overflow: hidden;
-    background-size: cover;
-    margin:4%;
-    padding: 0px;}
-    .card-info {top: 100%;
-      position: relative;
-      transition: all .8s ease-in-out;
-      height: 100%;
-      background-color: rgba(0,0,0,0.8);
-      color: #fff;
-      padding: 2% 5% 2% 5%;
-    }
-    .card-info h2{
-      margin: 0;
-    }
-    .card-info p{
-      margin: 0;
-    }
-    .item:hover > .card-info{
-      top: 0;
-    }
-    .item:hover{
-      background:hidden;
-    }
-    </style>
+
     <div class="item col-3 text-center" style="background-image:url(${moviesToPrint[i].image})" data-index="${movies[i].id}">
       <div class="card-info d-flex align-content-between row justify-content-center">
         <div >
@@ -60,36 +32,36 @@ function printMoviesList(critere) {
           <p>${moviesToPrint[i].director}</p>
           <p>${moviesToPrint[i].duration}</p>
         </div>  
-      </div>
+      
       <div class="row justify-content-center">
-      <div class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-start bgc-btn-play" data-toggle="modal" data-target="#trailerAffiche">
+      <div data-title="${moviesToPrint[i].title}" data-video="${moviesToPrint[i].traileryt}" class="col-9 col-sm-6 col-md-4 col-lg-3 col-xl-3 justify-content-start bgc-btn-play" data-toggle="modal">
         <i class="far fa-play-circle"></i>
       </div>
-        <div class="modal fade" id="trailerAffiche" tabindex="-1" role="dialog" aria-labelledby="Title" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="Title">${movies[i].title}</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="traileryt">
-                <iframe width="560" height="315" src="${movies[i].traileryt}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
+        
         <div class="bgc-btn-film">
-          <a href="fiche-films.html">Fiche Film</a>
+          <a href="fiche-films.html?id=${movies[i].id}">Fiche Film</a>
+        </div>
         </div>
       </div>
     </div>   
     `)
   }
   $('div.item').on('click', getDetail);  // Sur l'elt div.test Au click sur l'image appeller la fonction getDetail
+
+  $('.bgc-btn-play').on('click', function(event) {
+    event.stopPropagation();
+    var title = $(this).data('title');
+    var video = $(this).data('video');
+    $('#trailerAffiche .modal-title').text(title);
+    $('#trailerAffiche iframe').attr('src', video + "?version=3&enablejsapi=1");
+    $('#trailerAffiche').modal('show');
+  })
+
 } // fin function printMoviesList()
 
+$('#trailerAffiche .close').on('click', function () {
+  $('iframe')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
 
 function getDetail() {
   window.location.href = 'fiche-films.html?id=' + $(this).data('index'); //

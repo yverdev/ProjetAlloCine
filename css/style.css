@@ -523,8 +523,6 @@ header .nav-head a:hover {
 /************************* MAIN ****************************/
 main {
   /* Media queries responsive (on est en mobile first) */
-  /* FORMULAIRE */
-  /* FORMULAIRE */
   margin-top: 7vw;
 }
 
@@ -601,6 +599,7 @@ main .hellocine-content .box-office .carousel-caption {
 main .hellocine-content .coups-coeur {
   background-color: #222222;
   padding-bottom: 5rem;
+  margin-top: 5vw;
 }
 
 main .hellocine-content .coups-coeur h2 {
@@ -1023,122 +1022,6 @@ main .slideInRight {
   }
 }
 
-main h1 {
-  margin: 3vw;
-  color: #fecc00;
-  font-size: 3rem;
-  text-shadow: 0px 5px 4px rgba(34, 34, 34, 0.63);
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bolder;
-  word-spacing: 1vw;
-  letter-spacing: 1px;
-}
-
-main form {
-  border: 2px solid #fecc00;
-  border-radius: 5px;
-  margin: 25px auto 0;
-  padding: 20px;
-  width: 70%;
-  margin-bottom: 50px;
-}
-
-main form fieldset {
-  margin-bottom: 20px;
-  border: 2px solid #c0c0c0;
-}
-
-main form .form-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main form legend {
-  font-size: 1.4rem;
-  padding: 0 15px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bolder;
-  word-spacing: 1vw;
-  letter-spacing: 1px;
-}
-
-main form label {
-  font-weight: bold;
-}
-
-main form select,
-main form form input[type="text"],
-main form form input[type="email"] {
-  /*tous les input de type="email*/
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 0;
-  outline: 0;
-  padding: 10px;
-}
-
-main form textarea {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  resize: none;
-  width: 100%;
-}
-
-main form .validation {
-  text-align: center;
-}
-
-main div .btn {
-  background-color: #252525;
-  border: 0;
-  border-radius: 5px;
-  color: #fecc00;
-  display: inline-block;
-  margin: 10px 0 15px;
-  padding: 10px 15px;
-}
-
-main div .btn div .btn:hover {
-  background-color: #0056b3;
-  color: #ffb129;
-}
-
-main p.error {
-  color: red;
-  display: none;
-}
-
-main div#control {
-  padding: 10px;
-  font-size: 1.2em;
-  display: none;
-}
-
-main .success {
-  background: green;
-  color: #fff;
-}
-
-main .danger {
-  background: red;
-  color: #fff;
-}
-
-main main {
-  position: relative;
-}
-
-main footer {
-  position: absolute;
-  bottom: 0;
-}
-
 main .group-box .fas {
   color: #fecc00;
 }
@@ -1214,121 +1097,85 @@ main .group-box img:hover {
           box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
-main h1 {
-  margin: 3vw;
-  color: #fecc00;
-  font-size: 3rem;
-  text-shadow: 0px 5px 4px rgba(34, 34, 34, 0.63);
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bolder;
-  word-spacing: 1vw;
-  letter-spacing: 1px;
+.item {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  background-size: cover;
+  margin: 4%;
+  padding: 0px;
 }
 
-main form {
-  border: 2px solid #fecc00;
-  border-radius: 5px;
-  margin: 25px auto 0;
-  padding: 20px;
-  width: 70%;
-  margin-bottom: 50px;
-}
-
-main form fieldset {
-  margin-bottom: 20px;
-  border: 2px solid #c0c0c0;
-}
-
-main form .form-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main form legend {
-  font-size: 1.4rem;
-  padding: 0 15px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: bolder;
-  word-spacing: 1vw;
-  letter-spacing: 1px;
-}
-
-main form label {
-  font-weight: bold;
-}
-
-main form select,
-main form form input[type="text"],
-main form form input[type="email"] {
-  /*tous les input de type="email*/
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px 0;
-  outline: 0;
-  padding: 10px;
-}
-
-main form textarea {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  resize: none;
-  width: 100%;
-}
-
-main form .validation {
-  text-align: center;
-}
-
-main footer {
-  margin: -100px auto 0;
-}
-
-main div .btn {
-  background-color: #252525;
-  border: 0;
-  border-radius: 5px;
-  color: #fecc00;
-  display: inline-block;
-  margin: 10px 0 15px;
-  padding: 10px 15px;
-}
-
-main div .btn div .btn:hover {
-  background-color: #0056b3;
-  color: #ffb129;
-}
-
-main p.error {
-  color: red;
-  display: none;
-}
-
-main div#control {
-  padding: 10px;
-  font-size: 1.2em;
-  display: none;
-}
-
-main .success {
-  background: green;
+.card-info {
+  top: 100%;
+  position: relative;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
+  padding: 2% 5% 2% 5%;
 }
 
-main .danger {
-  background: red;
-  color: #fff;
+.card-info h2 {
+  margin: 0;
+}
+
+.card-info p {
+  margin: 0;
+}
+
+.item:hover > .card-info {
+  top: 0;
+}
+
+.item:hover {
+  background: hidden;
+}
+
+.bgc-btn-play {
+  color: #FFFFFF;
+  background-color: maroon;
+  /* border-radius: 5px; */
+  padding: 5px 60px 5px 60px;
+  /* width: 200px;
+        height: 50px; */
+}
+
+.bgc-btn-play:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: bolder;
+  color: #FECC00;
+}
+
+.bgc-btn-film {
+  background-color: #fff;
+  /* border-radius: 5px; */
+  padding: 5px 20px 5px 20px;
+}
+
+.bgc-btn-film:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: bolder;
+  color: #FECC00;
+}
+
+.bgc-btn-film a {
+  color: #000;
+}
+
+.bgc-btn-film a:hover {
+  text-decoration: none;
 }
 
 /************************* FOOTER ****************************/
 footer {
   background-color: #222222;
   min-height: 5vw;
+  margin-top: 5vh;
 }
 
 footer a {

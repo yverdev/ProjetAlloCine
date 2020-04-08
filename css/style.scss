@@ -173,11 +173,69 @@ main{
     @import "_index.scss";
     @import "_fiche-films.scss";
     @import "_developmentPageGroup.scss";
-    @import "_inscription.scss";
+   
 
     margin-top: 7vw;
 
 }
+.item {position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    background-size: cover;
+    margin:4%;
+    padding: 0px;}
+    .card-info {top: 100%;
+      position: relative;
+      transition: all .8s ease-in-out;
+      height: 100%;
+      background-color: rgba(0,0,0,0.8);
+      color: #fff;
+      padding: 2% 5% 2% 5%;
+    }
+    .card-info h2{
+      margin: 0;
+    }
+    .card-info p{
+      margin: 0;
+    }
+    .item:hover > .card-info{
+      top: 0;
+    }
+    .item:hover{
+      background:hidden;
+    }
+
+
+.bgc-btn-play{
+        color: #FFFFFF;
+        background-color: rgb(128, 0, 0);
+        /* border-radius: 5px; */
+        padding: 5px 60px 5px 60px;
+        /* width: 200px;
+        height: 50px; */
+        &:hover{
+            transform: scale(1.1);
+            font-weight: bolder;
+            color: #FECC00;
+        }
+    }
+    .bgc-btn-film{
+        background-color: #fff;
+        /* border-radius: 5px; */
+        padding: 5px 20px 5px 20px;
+        &:hover{
+            transform: scale(1.1);
+            font-weight: bolder;
+            color: #FECC00;
+        }
+        a{
+            color: #000;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
 /************************* FOOTER ****************************/
 footer{
     background-color: #222222;
