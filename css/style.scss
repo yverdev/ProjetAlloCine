@@ -2,10 +2,10 @@
                      COMMUN
 *****************************************************/
 @import "_normalize.scss";
-html{
-    position: relative;
-    min-height: 100%;
-}
+
+.page-login{
+    height: 100%;
+} 
 
 /* TEST Search Full Screen */
 /* The overlay effect with black background */
@@ -82,7 +82,8 @@ html{
 body{
     background-color: #f4f4f4;
     font-family: Arial, Helvetica, sans-serif;
-
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -186,7 +187,6 @@ main{
    
 
     margin-top: 7vw;
-    margin-bottom: 12vh;
 
 }
 .item {position: relative;
@@ -250,9 +250,6 @@ main{
 /************************* FOOTER ****************************/
 footer{
     background-color: #222222;
-    min-height: 5vh;
-    position: absolute;
-    bottom: 0;
 
     a{
         color: #fecc00;

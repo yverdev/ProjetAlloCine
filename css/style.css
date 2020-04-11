@@ -344,9 +344,8 @@ template {
   display: none;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.page-login {
+  height: 100%;
 }
 
 /* TEST Search Full Screen */
@@ -425,6 +424,13 @@ html {
 body {
   background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .marquee-rtl {
@@ -536,7 +542,6 @@ header .resultsearch {
 main {
   /* Media queries responsive (on est en mobile first) */
   margin-top: 7vw;
-  margin-bottom: 12vh;
 }
 
 main .hellocine-content {
@@ -1187,9 +1192,6 @@ main .group-box img:hover {
 /************************* FOOTER ****************************/
 footer {
   background-color: #222222;
-  min-height: 5vh;
-  position: absolute;
-  bottom: 0;
 }
 
 footer a {
