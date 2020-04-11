@@ -530,6 +530,14 @@ header .nav-head a:hover, header .nav-head i:hover {
   font-weight: bolder;
 }
 
+header input {
+  color: white;
+}
+
+header .resultsearch {
+  color: white;
+}
+
 /************************* MAIN ****************************/
 main {
   /* Media queries responsive (on est en mobile first) */
