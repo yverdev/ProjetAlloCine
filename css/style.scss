@@ -2,6 +2,10 @@
                      COMMUN
 *****************************************************/
 @import "_normalize.scss";
+html{
+    position: relative;
+    min-height: 100%;
+}
 
 /* TEST Search Full Screen */
 /* The overlay effect with black background */
@@ -70,7 +74,7 @@
   }
   
   .overlay button:hover {
-    transform: scale(1.05);
+    color: #fff;
   }
 
 /* Fin TEST */
@@ -158,7 +162,7 @@ header{
         padding-left: 15px;
         padding-right: 15px;
         
-        a{
+        a,i{
             color: #fff;
             &:hover{
                 text-decoration: none;  
@@ -176,6 +180,7 @@ main{
    
 
     margin-top: 7vw;
+    margin-bottom: 12vh;
 
 }
 .item {position: relative;
@@ -239,8 +244,9 @@ main{
 /************************* FOOTER ****************************/
 footer{
     background-color: #222222;
-    min-height: 5vw;
-    margin-top: 5vh;
+    min-height: 5vh;
+    position: absolute;
+    bottom: 0;
 
     a{
         color: #fecc00;
@@ -249,8 +255,7 @@ footer{
         padding: 1rem;
         a{
             font-size: 2rem;
-            padding: 1rem;
-            margin: 2rem;
+            
             &:hover{
                 color: red;
                 transform: scale(2);

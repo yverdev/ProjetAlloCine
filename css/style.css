@@ -344,6 +344,11 @@ template {
   display: none;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 /* TEST Search Full Screen */
 /* The overlay effect with black background */
 .overlay {
@@ -413,8 +418,7 @@ template {
 }
 
 .overlay button:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  color: #fff;
 }
 
 /* Fin TEST */
@@ -510,11 +514,11 @@ header .nav-head {
   padding-right: 15px;
 }
 
-header .nav-head a {
+header .nav-head a, header .nav-head i {
   color: #fff;
 }
 
-header .nav-head a:hover {
+header .nav-head a:hover, header .nav-head i:hover {
   text-decoration: none;
   color: #fecc00;
   font-weight: bolder;
@@ -524,6 +528,7 @@ header .nav-head a:hover {
 main {
   /* Media queries responsive (on est en mobile first) */
   margin-top: 7vw;
+  margin-bottom: 12vh;
 }
 
 main .hellocine-content {
@@ -1174,8 +1179,9 @@ main .group-box img:hover {
 /************************* FOOTER ****************************/
 footer {
   background-color: #222222;
-  min-height: 5vw;
-  margin-top: 5vh;
+  min-height: 5vh;
+  position: absolute;
+  bottom: 0;
 }
 
 footer a {
@@ -1188,8 +1194,6 @@ footer .nav-foot-1 {
 
 footer .nav-foot-1 a {
   font-size: 2rem;
-  padding: 1rem;
-  margin: 2rem;
 }
 
 footer .nav-foot-1 a:hover {
