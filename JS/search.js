@@ -1,2 +1,2 @@
-document.getElementById('#searchInputBar').addEventListener('keyup', function(e)
+document.getElementById('#searchInputBar').addEventListener('keyup', function(e);
    
