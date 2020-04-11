@@ -545,6 +545,10 @@ header input {
   color: white;
 }
 
+header .resultsearch {
+  color: white;
+}
+
 /************************* MAIN ****************************/
 main {
   /* Media queries responsive (on est en mobile first) */
