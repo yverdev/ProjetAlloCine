@@ -23,7 +23,7 @@ function printMoviesList(critere) {
   for (var i = 0; i < moviesToPrint.length; i++) {
     target.append(`
 
-    <div class="item col-3 text-center" style="background-image:url(${moviesToPrint[i].image})" data-index="${movies[i].id}">
+    <div class="item col-lg-3 text-center" style="background-image:url(${moviesToPrint[i].image})" data-index="${movies[i].id}">
       <div class="card-info d-flex align-content-between row justify-content-center">
         <div >
           <h2>${moviesToPrint[i].title}</h2>
