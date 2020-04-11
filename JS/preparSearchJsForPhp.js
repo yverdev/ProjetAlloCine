@@ -1,4 +1,4 @@
-$(#searchInputBar).keyup(function(){
+$('#searchInputBar').keyup(function(){
     var search = $(this).val();
     var data = 'keyword' + search;
     if (search.lenght>2){
@@ -8,7 +8,7 @@ $(#searchInputBar).keyup(function(){
             data: data,
             success : function(server_respons){
 
-                $(#resultsearch).html(server_respons).show();
+                $('#resultsearch').html(server_respons).show();
             }       
         });
     }
