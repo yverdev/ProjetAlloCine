@@ -393,6 +393,7 @@ div #h {
   color: #aca9a9;
   top: 20%;
   font-size: 2rem;
+  margin-left: 10%;
 }
 
 p #h {
@@ -549,6 +550,10 @@ header .box-header-un {
 }
 
 header input {
+  color: white;
+}
+
+header .resultsearch {
   color: white;
 }
 

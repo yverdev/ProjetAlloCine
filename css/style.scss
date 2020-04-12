@@ -46,6 +46,8 @@ div #h{
     color: rgb(172, 169, 169);
     top: 20%;
     font-size: 2rem;
+
+
 }
 
 p #h{
@@ -66,6 +68,8 @@ p #h{
     color: #fff;
 }
 
+
+
 /* Style the search field */
 .overlay input[type=text] {
     padding: 15px;
@@ -77,10 +81,14 @@ p #h{
     background: none;  
 }
 
+
+
 .overlay input[type=text]:hover {
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(74,56,0,0) 29%,rgba(254,192,0,0.15) 100%);
 
 }
+
+
 
 /* Style the submit button */
 .overlay button {
@@ -193,6 +201,9 @@ header{
     }
 
     input{
+        color: white;
+    }
+    .resultsearch{
         color: white;
     }
 }    
