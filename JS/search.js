@@ -1,15 +1,23 @@
 
-    $('#searchInputBar').keyup(function(){
-        var search = $(this).val();
-        var data = 'keyword' + search;
-        var respons = $.each([moviesData].title, function(e){
-            console.log(respons);
-            $("#h").append("Titre" + e + '<br>');
+    $('#searchInputBar').on('input',function(e){
+        var textInput = $('#h').html($(this).val());
+        console.log('textInput');
+        var titleBdd;
+        // for (var i = 0; i < movies.length; ++i) {
+        //     // faire quelque chose avec `array[i]`
+        //     titleBdd = movies[i].title;
+        //     console.log('titleBdd');  
+        // }
+
+        jQuery.each(movies, function(index, value) {
+            // faire quelque chose avec `value` (ou `this` qui est `value` )
+            titleBdd = (index+": "+ value.title);
+            console.log('titleBdd');
             
         });
-        if (search.lenght>4){
-            $('#h').html(respons).show();      
-         }else{
-            $('#h').html('Aucun résultat pour cette recherche !').show();
-        }
-     });  
+        // if(textInput.toUpperCase() != titleBdd.toUpperCase() && titleBdd.toUpperCase()!= null && titleBdd.toUpperCase() != "" ){
+        //     $('#h').html($('#searchInputBar').val());
+        // }else{
+        //     $('#h').html('Aucun résultat trouvé pour votre recherche.')
+        // }
+    });
