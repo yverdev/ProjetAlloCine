@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Accueil - Hellocine</title>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+
+    <header class="sticky-top">
+        <div class="navbar navbar-expand-lg navbar-light sticky-top">
+            <!--  Search Full Screen  -->
+            <div id="myOverlay" class="overlay">
+                
+                <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+                <div class="overlay-content">
+                    <form action="action_page.php">
+                        <input id="searchInputBar" type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="divh"><p id="h"></p></div>
+            </div>
+            <!-- FIN -->
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="d-flex align-items-center box-header-un">
+
+                        <div class=" col-lg-4">
+                            <a href="index.html"><img class="logo-header" src="img/Hellociné_2.png"alt="logo de Hellocine"></a>
+                                    
+                        </div>
+
+                        <!-- Box Évenement Tablette -->
+                        <div class="d-none d-lg-block col-lg-8 marquee-rtl">
+
+                            <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche
+                                <span class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span
+                                    class="evt">30</span> juin et mercredi <span class="evt">1er</span> juillet 2020 dans
+                                tous les cinémas participants.
+                            </div>
+
+                        </div>
+
+                        <div >
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+                        <nav class="navbar-nav container-fluid justify-content-between align-items-center">
+
+                            <a href="index.html"class="order-2 order-lg-1">Accueil</a>
+                            <a href="index.html#prochainement"class="order-3 order-lg-2">Prochainement</a>
+                            <a href="equipededeveloppement.html"class="order-4 order-lg-3">L'équipe de développement</a>
+
+                            <div class="row justify-content-between item-nav order-lg-4">
+                                <div>
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div>
+                                    <a data-toggle="modal" data-target="#exampleModal"data-whatever="@mdo"><i class="far fa-user"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- <a href="cgv.html">CGV</a> -->
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!-- Box Évenement TEL-->
+        <div class="container-fluid d-lg-none marquee-rtl marquee-rtl-tel">
+
+            <div class="container info">La <span class="evt">Fête du Cinéma</span> aura lieu les dimanche <span
+                class="evt">28</span>, lundi <span class="evt">29</span>, mardi <span class="evt">30</span> juin
+                et mercredi <span class="evt">1er</span> juillet 2020 dans tous les cinémas participants.
+            </div>
+
+        </div>
+        
+    </main>
+
+    <footer></footer>
+
+    <!-- jquery pour Bootstarp 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Charger la donnée movies -->
+    <script src="js/movie-data.js"></script>
+    <!-- Charger les functions utilitaires -->
+    <script src="js/utilities.js"></script>
+    <script src="js/formulaire.js"></script>
+    <!-- Mon script -->
+    <script src="js/main.js"></script>
+    <!-- Search Bar -->
+    <script src="js/search.js"></script>
+    
+</body>
+</html>

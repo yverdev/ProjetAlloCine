@@ -3,11 +3,21 @@
 *****************************************************/
 @import "_normalize.scss";
 
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Pour le FOOTER de la page Login */
 .page-login{
     height: 100%;
 } 
+/* FIN */
 
-/* TEST Search Full Screen */
+/*Search Full Screen */
 /* The overlay effect with black background */
 .overlay {
     height: 100%;
@@ -19,89 +29,82 @@
     left: 0;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
-  }
+}
   
-  /* The content */
-  .overlay-content {
+/* The content */
+.overlay-content {
     position: relative;
     top: 10%;
     width: 80%;
     text-align: center;
     margin-top: 30px;
     margin: auto;
-  }
+}
 
-  div #h{
-      position: absolute;
-      color: rgb(172, 169, 169);
-        top: 20%;
-        font-size: 2rem;
-  }
+div #h{
+    position: absolute;
+    color: rgb(172, 169, 169);
+    top: 20%;
+    font-size: 2rem;
+}
 
-  p #h{
-      text-align: center;
-  }
+p #h{
+    text-align: center;
+}
   
-  /* Close button */
-  .overlay .closebtn {
+/* Close button */
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
     cursor: pointer;
     color: #fecc00;
-  }
+}
   
-  .overlay .closebtn:hover {
+.overlay .closebtn:hover {
     color: #fff;
-  }
-  
-  /* Style the search field */
-  .overlay input[type=text] {
+}
+
+/* Style the search field */
+.overlay input[type=text] {
     padding: 15px;
     font-size: 2rem;
     border: none;
     border-bottom: 1px solid #fecc00;
     float: left;
     width: 80%;
-    background: none;  }
-  
-  .overlay input[type=text]:hover {
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(74,56,0,0) 29%,rgba(254,192,0,0.15) 100%);
-
-  }
-  
-  /* Style the submit button */
-  .overlay button {
-    float: left;
-    width: 20%;
-    padding: 15px;
-    background: none;
-    font-size: 2rem;
-    color: #fecc00;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .overlay button:hover {
-    color: #fff;
-  }
-
-/* Fin TEST */
-
-body{
-    background-color: #f4f4f4;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    flex-direction: column;
-    
+    background: none;  
 }
 
+.overlay input[type=text]:hover {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(74,56,0,0) 29%,rgba(254,192,0,0.15) 100%);
+
+}
+
+/* Style the submit button */
+.overlay button {
+float: left;
+width: 20%;
+padding: 15px;
+background: none;
+font-size: 2rem;
+color: #fecc00;
+border: none;
+cursor: pointer;
+text-align: left;
+}
+
+.overlay button:hover {
+color: #fff;
+}
+
+/* FIN SEARCH BAR */
+
+
+/* BOX évènement defilent */
 .marquee-rtl {
 
-    margin: 1em auto 2em;
-    border-radius: 5px;
     overflow: hidden;                    
 
     .info {
@@ -129,132 +132,136 @@ body{
 }
 .marquee-rtl-tel{
     margin: 0;
-    padding-top: 7vw;
+    background-color: #222222;
+    color: #ccc;
     
 }
-
-/* TEST CARD-info*/
-.hide{
-    display: none;
-    /* background-color: red; */
-    
-}
-
-
+/* FIN box */
 
 /************************* HEADER ****************************/
-/* .header-fixed{
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 0px;
-} */
+
 header{
     
     background: linear-gradient(to bottom, rgba(34,34,34,1) 0%,rgba(76,76,76,1) 0%,rgba(34,34,34,1) 0%,rgba(34,34,34,1) 75%,rgba(76,76,76,1) 98%,rgba(76,76,76,1) 98%,rgba(19,19,19,1) 100%);
     background-size: 100%;
-    color: #fff;
+    color: #fff; 
+    .fa-bars{
+        
+        color: #FFFFFF;
+        &:hover{
+            color: #FECC00;
+        }
+    }
+    .navbar-nav{
+        padding-left: 15px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+        a{
+            color: #fff;
+            &:hover{
+                color: #FECC00;
+                text-decoration: none;
+            }
+        }
 
-    /* position: relative; */
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-    top: 0px;
+        .item-nav{
+            width: 150px;
+            .fa-search{
+                &:hover{
+    
+                    color: #FECC00;
+                } 
+            }
+            .fa-user{
+                &:hover{
+    
+                    color: #FECC00;
+                } 
+            }
+        }
+    }
    
     .logo-header{
         width: 100%;
-        max-width: 3vw;
+        max-width: 50px;
     }
 
     .box-header-un{
         padding-right: 15px;
 
     }
-    .nav-head{
-        padding-left: 15px;
-        padding-right: 15px;
-        
-        a,i{
-            color: #fff;
-            &:hover{
-                text-decoration: none;  
-                color: #fecc00;
-                font-weight: bolder;
-            }
-        }
-    }
+
     input{
         color: white;
     }
 }    
 /************************* MAIN ****************************/   
 main{
+
     @import "_index.scss";
     @import "_fiche-films.scss";
     @import "_developmentPageGroup.scss";
-   
-
-    margin-top: 7vw;
 
 }
+/* Pour les CARDs des films page d'accueil */
 .item {position: relative;
     width: 300px;
     height: 450px;
     overflow: hidden;
     background-size: cover;
     margin:4%;
-    padding: 0px;}
-    .card-info {top: 100%;
-      position: relative;
-      transition: all .8s ease-in-out;
-      height: 100%;
-      background-color: rgba(0,0,0,0.8);
-      color: #fff;
-      padding: 2% 5% 2% 5%;
-    }
-    .card-info h2{
-      margin: 0;
-    }
-    .card-info p{
-      margin: 0;
-    }
-    .item:hover > .card-info{
-      top: 0;
-    }
-    .item:hover{
-      background:hidden;
-    }
-
-
+    padding: 0px;
+}
+.card-info {top: 100%;
+    position: relative;
+    transition: all .8s ease-in-out;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 2% 5% 2% 5%;
+}
+.card-info h2{
+    margin: 0;
+}
+.card-info p{
+    margin: 0;
+}
+.item:hover > .card-info{
+    top: 0;
+}
+.item:hover{
+    background:hidden;
+}
 .bgc-btn-play{
-        color: #FFFFFF;
-        background-color: rgb(128, 0, 0);
-        /* border-radius: 5px; */
-        padding: 5px 60px 5px 60px;
-        /* width: 200px;
-        height: 50px; */
+    color: #FFFFFF;
+    background-color: rgb(128, 0, 0);
+    padding: 5px 60px 5px 60px;
+
+    &:hover{
+        transform: scale(1.1);
+        font-weight: bolder;
+        color: #FECC00;
+    }
+}
+.bgc-btn-film{
+    background-color: #fff;
+    /* border-radius: 5px; */
+    padding: 5px 20px 5px 20px;
+    &:hover{
+        transform: scale(1.1);
+        font-weight: bolder;
+        color: #FECC00;
+    }
+    a{
+        color: #000;
         &:hover{
-            transform: scale(1.1);
-            font-weight: bolder;
-            color: #FECC00;
+            text-decoration: none;
         }
     }
-    .bgc-btn-film{
-        background-color: #fff;
-        /* border-radius: 5px; */
-        padding: 5px 20px 5px 20px;
-        &:hover{
-            transform: scale(1.1);
-            font-weight: bolder;
-            color: #FECC00;
-        }
-        a{
-            color: #000;
-            &:hover{
-                text-decoration: none;
-            }
-        }
-    }
+}
+/* FIN CARDs Films */
+
 /************************* FOOTER ****************************/
 footer{
     background-color: #222222;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***************************************************** 
                      COMMUN
 *****************************************************/
@@ -344,11 +345,25 @@ template {
   display: none;
 }
 
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Pour le FOOTER de la page Login */
 .page-login {
   height: 100%;
 }
 
-/* TEST Search Full Screen */
+/* FIN */
+/*Search Full Screen */
 /* The overlay effect with black background */
 .overlay {
   height: 100%;
@@ -431,22 +446,9 @@ p #h {
   color: #fff;
 }
 
-/* Fin TEST */
-body {
-  background-color: #f4f4f4;
-  font-family: Arial, Helvetica, sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
+/* FIN SEARCH BAR */
+/* BOX évènement defilent */
 .marquee-rtl {
-  margin: 1em auto 2em;
-  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -489,56 +491,61 @@ body {
 
 .marquee-rtl-tel {
   margin: 0;
-  padding-top: 7vw;
+  background-color: #222222;
+  color: #ccc;
 }
 
-/* TEST CARD-info*/
-.hide {
-  display: none;
-  /* background-color: red; */
-}
-
+/* FIN box */
 /************************* HEADER ****************************/
-/* .header-fixed{
-    width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 0px;
-} */
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(#222222), color-stop(0%, #4c4c4c), color-stop(0%, #222222), color-stop(75%, #222222), color-stop(98%, #4c4c4c), color-stop(98%, #4c4c4c), to(#131313));
   background: linear-gradient(to bottom, #222222 0%, #4c4c4c 0%, #222222 0%, #222222 75%, #4c4c4c 98%, #4c4c4c 98%, #131313 100%);
   background-size: 100%;
   color: #fff;
-  /* position: relative; */
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0px;
+}
+
+header .fa-bars {
+  color: #FFFFFF;
+}
+
+header .fa-bars:hover {
+  color: #FECC00;
+}
+
+header .navbar-nav {
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+header .navbar-nav a {
+  color: #fff;
+}
+
+header .navbar-nav a:hover {
+  color: #FECC00;
+  text-decoration: none;
+}
+
+header .navbar-nav .item-nav {
+  width: 150px;
+}
+
+header .navbar-nav .item-nav .fa-search:hover {
+  color: #FECC00;
+}
+
+header .navbar-nav .item-nav .fa-user:hover {
+  color: #FECC00;
 }
 
 header .logo-header {
   width: 100%;
-  max-width: 3vw;
+  max-width: 50px;
 }
 
 header .box-header-un {
   padding-right: 15px;
-}
-
-header .nav-head {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-header .nav-head a, header .nav-head i {
-  color: #fff;
-}
-
-header .nav-head a:hover, header .nav-head i:hover {
-  text-decoration: none;
-  color: #fecc00;
-  font-weight: bolder;
 }
 
 header input {
@@ -548,7 +555,6 @@ header input {
 /************************* MAIN ****************************/
 main {
   /* Media queries responsive (on est en mobile first) */
-  margin-top: 7vw;
 }
 
 main .hellocine-content {
@@ -624,7 +630,6 @@ main .hellocine-content .box-office .carousel-caption {
 main .hellocine-content .coups-coeur {
   background-color: #222222;
   padding-bottom: 5rem;
-  margin-top: 5vw;
 }
 
 main .hellocine-content .coups-coeur h2 {
@@ -712,7 +717,7 @@ main .films-venir h2 {
 }
 
 main .movie-bgc {
-  background-image: url("../img/fiche-films/bg-jamesBond.jpg");
+  background-image: url("");
   background-size: cover;
   padding: 0;
 }
@@ -1122,6 +1127,7 @@ main .group-box img:hover {
           box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
+/* Pour les CARDs des films page d'accueil */
 .item {
   position: relative;
   width: 300px;
@@ -1162,10 +1168,7 @@ main .group-box img:hover {
 .bgc-btn-play {
   color: #FFFFFF;
   background-color: maroon;
-  /* border-radius: 5px; */
   padding: 5px 60px 5px 60px;
-  /* width: 200px;
-        height: 50px; */
 }
 
 .bgc-btn-play:hover {
@@ -1196,6 +1199,7 @@ main .group-box img:hover {
   text-decoration: none;
 }
 
+/* FIN CARDs Films */
 /************************* FOOTER ****************************/
 footer {
   background-color: #222222;
