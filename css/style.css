@@ -1123,6 +1123,36 @@ main .group-box img:hover {
           box-shadow: 0px 0px 33px 9px rgba(0, 0, 0, 0.75);
 }
 
+
+main .cgv {
+  background-color: #222222;
+  padding: 3rem 0px 3rem 0px;
+}
+
+main .cgv .bgc-angle-jaune {
+  background: linear-gradient(135deg, #fecc00 0%, rgba(254, 204, 0, 0) 8%, rgba(254, 204, 0, 0) 92%, #fecc00 100%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+main .cgv .bgc-angle-jaune .content-cgv {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+main .cgv .bgc-angle-jaune .content-cgv h2 {
+  color: #fecc00;
+}
+
+main .cgv .bgc-angle-jaune .content-cgv .fin-page {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+/* Pour les CARDs des films page d'accueil */
+
 .item {
   position: relative;
   width: 300px;
@@ -1199,7 +1229,8 @@ main .group-box img:hover {
 
 /************************* FOOTER ****************************/
 footer {
-  background-color: #222222;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4c4c4c), color-stop(6%, #595959), color-stop(14%, #111111), color-stop(14%, #111111), to(#222222));
+  background: linear-gradient(to bottom, #4c4c4c 0%, #595959 6%, #111111 14%, #111111 14%, #222222 100%);
 }
 
 footer a {
@@ -1224,6 +1255,14 @@ footer .nav-foot-1 .fa-deco:hover {
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
   color: red;
+}
+
+footer .nav-foot-1 .fa-deco:hover a {
+  text-decoration: none;
+}
+
+footer .nav-foot-2 {
+  padding-bottom: 15px;
 }
 
 footer .nav-foot-2 a {
