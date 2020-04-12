@@ -373,16 +373,17 @@ template {
   margin: auto;
 }
 
-div #h {
+input#searchInputBar {
+  position: relative;
+}
+
+#searchResult {
   position: absolute;
   color: #aca9a9;
   top: 40%;
+  width: 60%;
   font-size: 2rem;
   margin-left: 10%;
-}
-
-p #h {
-  text-align: center;
 }
 
 /* Close button */

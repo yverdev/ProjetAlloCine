@@ -30,18 +30,19 @@
     margin-top: 30px;
     margin: auto;
 }
+input#searchInputBar{
+    position: relative;
+}
 
-div #h{
+#searchResult{
     position: absolute;
     color: rgb(172, 169, 169);
     top: 40%;
+    width: 60%;
     font-size: 2rem;
     margin-left: 10%;
 }
 
-p #h{
-    text-align: center;
-}
   
 /* Close button */
 .overlay .closebtn {
