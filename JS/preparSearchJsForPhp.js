@@ -12,4 +12,7 @@ $('#searchInputBar').keyup(function(){
             }       
         });
     }
-});  
+});
+
+fetch('').then(function(res) {filterMovies = res.result})
+.catch(e) {}
