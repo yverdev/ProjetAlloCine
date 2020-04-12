@@ -362,6 +362,10 @@ body {
   height: 100%;
 }
 
+h1 {
+  color: #fecc00;
+}
+
 /* FIN */
 /*Search Full Screen */
 /* The overlay effect with black background */
@@ -388,15 +392,16 @@ body {
   margin: auto;
 }
 
-div #h {
+input#searchInputBar {
+  position: relative;
+}
+
+#searchResult {
   position: absolute;
   color: #aca9a9;
   top: 20%;
   font-size: 2rem;
-}
-
-p #h {
-  text-align: center;
+  margin-left: 10%;
 }
 
 /* Close button */
