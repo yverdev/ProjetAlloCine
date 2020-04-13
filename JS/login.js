@@ -89,19 +89,21 @@ function onSubmit(event) {
     // On affiche une box d'erreur ou de succès
     // 
     if (nbErrors == 0) {
-     div.removeClass('danger');
-     div.addClass('success');
-     div.text("Coool, le formulaire a été envoyé !").slideDown();
+     div.removeClass('danger');                                     //comment from YANN //where is stored 'danger' in css
+     div.addClass('success');                                       //comment from YANN //where is stored 'success' in css
+     div.text("Cool, le formulaire a été envoyé !").slideDown();    //comment from YANN // the slide does not appear in case of success
      // poster le formulaire au serveur
     }
     else {
-     div.removeClass('success');
-     div.addClass('danger');
-     div.text("il y " + nbErrors + " erreur(s)").slideDown();
+     div.removeClass('success');                                    //comment from YANN //where is stored 'danger' in css
+     div.addClass('danger');                                        //comment from YANN //where is stored 'success' in css
+     div.text("il y " + nbErrors + " erreur(s)").slideDown();       //comment from YANN // the slide does not appear in case of error
     }
  
    }
- 
- 
+
+   
    form.on('submit', onSubmit);
 
+
+    // comment from YANN: value of confirm email field does not mark different email error
